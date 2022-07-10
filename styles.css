@@ -37,6 +37,7 @@ body
     width: 500px;
     height: 500px;
     background-image: conic-gradient(transparent, transparent, #00ccff);
+    /* background-image: -webkit-linear-gradient(90deg, rgba(0, 204, 255, 1) 0%, rgba(212, 0, 212, 1) 100%); */
     animation: animate 4s linear infinite;
 }
 
@@ -47,6 +48,7 @@ body
     width: 500px;
     height: 500px;
     background-image: conic-gradient(transparent, transparent, #d400d4);
+    /* background-image: -webkit-linear-gradient(90deg, rgba(0, 204, 255, 1) 0%, rgba(212, 0, 212, 1) 100%); */
     animation: animate 4s linear infinite;
     animation-delay: -2s;
 }
@@ -76,12 +78,25 @@ body
 .box h2
 {
     position: relative;
-    z-index: 2;
-    color: white;
+    z-index: 1;
+    background: -webkit-linear-gradient(90deg, rgba(0, 204, 255, 1) 0%, rgba(212, 0, 212, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 10em ;
 }
 
 .box:hover h2
 {
-    color: red;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
 }
+
