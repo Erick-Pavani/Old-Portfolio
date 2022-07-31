@@ -17,6 +17,12 @@ body
     background: #0c1022;
 }
 
+h1 {
+    color: gold;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
 .box
 {
     position: relative;
@@ -37,7 +43,7 @@ body
     width: 500px;
     height: 500px;
     background-image: conic-gradient(transparent, transparent, #00ccff);
-    /* background-image: -webkit-linear-gradient(90deg, rgba(0, 204, 255, 1) 0%, rgba(212, 0, 212, 1) 100%); */
+    /*background-image: -webkit-linear-gradient(90deg, rgba(0, 204, 255, 1) 0%, rgba(212, 0, 212, 1) 100%);*/
     animation: animate 4s linear infinite;
 }
 
@@ -71,7 +77,8 @@ body
     position: absolute;
     inset: 5px;
     border-radius: 16px;
-    background: #0c1022;
+    /* background: #0c1022; */
+    background: black;
     z-index: 1;
 }
 
@@ -100,3 +107,48 @@ body
     -o-transition: 1s ease-in-out;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.loader {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #fff;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094, #F90000 );
+    animation: gradient 20s linear infinite;
+    background-size: 500%;
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094 , #F90000);
+    animation: gradient 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+
+    0% {
+        background-position: 500% 0;
+    }
+}
