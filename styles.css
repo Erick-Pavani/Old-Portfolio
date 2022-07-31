@@ -8,32 +8,46 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body
-{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #0c1022;
+    background: #000;
+    flex-direction: column;
+    gap: 80px;
 }
 
-h1 {
+.title {
     color: gold;
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 70px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    padding: 30px;
 }
 
 .box
 {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 275px;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    gap: 20px;
 }
 
 .box::before
@@ -77,44 +91,53 @@ h1 {
     position: absolute;
     inset: 5px;
     border-radius: 16px;
-    /* background: #0c1022; */
     background: black;
     z-index: 1;
 }
 
-.box h2
-{
+.box i, .block i {
     position: relative;
     z-index: 1;
+    background: linear-gradient(90deg, rgba(0, 204, 255, 1) 0%, rgba(212, 0, 212, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    /*width: 75%;*/
+    font-size: 85px;
+    transition: 0.7s ease-in-out;
+    -webkit-transition: 0.7s ease-in-out;
+    -moz-transition: 0.7s ease-in-out;
+    -ms-transition: 0.7s ease-in-out;
+    -o-transition: 0.7s ease-in-out;
+}
+
+.box:hover i, .block:hover i {
+    transform: scale(1.3) rotate(360deg);
+}
+
+.box h4, .block h4 {
+    z-index: 1;
+    font-size: 30px;
     background: -webkit-linear-gradient(90deg, rgba(0, 204, 255, 1) 0%, rgba(212, 0, 212, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 10em ;
+    color: transparent;
+    transition: 0.7s ease-in-out;
+    -webkit-transition: 0.7s ease-in-out;
+    -moz-transition: 0.7s ease-in-out;
+    -ms-transition: 0.7s ease-in-out;
+    -o-transition: 0.7s ease-in-out;
 }
 
-.box:hover h2
-{
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transition: 1s ease-in-out;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #000;
-    flex-direction: column;
-    gap: 80px;
+.box:hover h4, .block:hover h4 {
+    transform: scale(1.3);
+    margin-top: 50px;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
 }
 
 .loader {
@@ -150,5 +173,80 @@ body {
 
     0% {
         background-position: 500% 0;
+    }
+}
+
+.block {
+    position: relative;
+    width: 200px;
+    height: 275px;
+    /* background: linear-gradient(0deg, black, black, rgb(44, 43, 43)); */
+    background: black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.glow::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #dd0099, #6e0dd0, #ff3300, #099fff, #e6fb04);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: rainbow 20s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .top {
+        max-width: 85%;
+        margin-top: 30px;
+    }
+    
+    .title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .block {
+        width: 250px;
+        height: 350px;
+    }
+
+    .box {
+        width: 250px;
+        height: 350px;
     }
 }
