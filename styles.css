@@ -240,13 +240,16 @@ body {
         font-size: 28px;
     }
 
-    .block {
-        width: 250px;
-        height: 350px;
+    .block, .box {
+        width: 150px;
+        height: 215px;
     }
 
-    .box {
-        width: 250px;
-        height: 350px;
+    .box i, .block i {
+        font-size: 60px;
+    }
+
+    .box h4, .block h4 {
+        font-size: 23px;
     }
 }
