@@ -28,9 +28,65 @@ main {
 }
 
 .title {
-    color: gold;
     margin-bottom: 10px;
     font-size: 70px;
+    display: flex;
+}
+
+.title span:nth-child(1) {
+    color: #fd004c;
+}
+
+.title span:nth-child(2) {
+    color: #fe9000;
+}
+
+.title span:nth-child(3) {
+    color: #fff020;
+}
+
+.title span:nth-child(4) {
+    color: #3edf4b;
+}
+
+.title span:nth-child(5) {
+    color: #3363ff;
+}
+
+.title span:nth-child(6) {
+    color: #b102b7;
+}
+
+.title span:nth-child(7) {
+    color: #fd004c;
+}
+
+.title span:nth-child(8) {
+    color: #fe9000;
+}
+
+.title span:nth-child(9) {
+    color: #fff020;
+}
+
+.title span:nth-child(10) {
+    color: #3edf4b;
+}
+
+.title span:nth-child(11) {
+    color: #3363ff;
+}
+
+.title span:nth-child(12) {
+    color: #b102b7;
+}
+
+.title span:nth-child(13) {
+    color: #fd004c;
+}
+
+.title .space {
+    margin-right: 20px;
 }
 
 .cards {
@@ -104,7 +160,7 @@ main {
     z-index: 1;
 }
 
-.box i, .block i {
+.box i, .rainbowCard i {
     position: relative;
     z-index: 1;
     background: linear-gradient(90deg, rgba(0, 204, 255, 1) 0%, rgba(212, 0, 212, 1) 100%);
@@ -112,7 +168,6 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    /*width: 75%;*/
     font-size: 85px;
     transition: 0.7s ease-in-out;
     -webkit-transition: 0.7s ease-in-out;
@@ -121,11 +176,11 @@ main {
     -o-transition: 0.7s ease-in-out;
 }
 
-.box:hover i, .block:hover i {
+.box:hover i, .rainbowCard:hover i {
     transform: scale(1.3) rotate(360deg);
 }
 
-.box h4, .block h4 {
+.box h4, .rainbowCard h4 {
     z-index: 1;
     font-size: 30px;
     background: -webkit-linear-gradient(90deg, rgba(0, 204, 255, 1) 0%, rgba(212, 0, 212, 1) 100%);
@@ -140,7 +195,7 @@ main {
     -o-transition: 0.7s ease-in-out;
 }
 
-.box:hover h4, .block:hover h4{
+.box:hover h4, .rainbowCard:hover h4{
     transform: scale(1.3);
     margin-top: 50px;
     -webkit-transform: scale(1.3);
@@ -185,34 +240,6 @@ main {
     }
 }
 
-.block {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    /* background: linear-gradient(0deg, black, black, rgb(44, 43, 43)); */
-    background: black;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.glow::before {
-    content: '';
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    border-radius: 15px;
-    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #dd0099, #6e0dd0, #ff3300, #099fff, #e6fb04);
-    background-size: 400%;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    z-index: -1;
-    animation: rainbow 20s linear infinite;
-}
-
 .rainbowCard {
     width: 250px;
     height: 250px;
@@ -220,6 +247,10 @@ main {
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .rainbowCard::before {
@@ -227,7 +258,7 @@ main {
     height: 150%;
     width: 150%;
     position: absolute;
-    background: conic-gradient(        #fd004c,        #fe9000,        #fff020,        #3edf4b,        #3363ff,        #b102b7,        #fd004c    );
+    background: conic-gradient(#fd004c,#fe9000,#fff020,#3edf4b,#3363ff,#b102b7,#fd004c);
     left: -25%;
     top: -25%;
     animation: spin 1.5s linear infinite;
@@ -240,21 +271,23 @@ main {
 }
 
 .rainbowCard::after {
-    content: 'RAINBOW';
+    /* content: 'RAINBOW'; */
+    content: '';
     position: absolute;
-    background: #1c1b29;
+    /* background: #1c1b29; */
+    background: #000;
     height: 93%;
     width: 93%;
     top: 3.5%;
     left: 3.5%;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
-    color: white;
-    letter-spacing: 6px;
+    /* color: white; */
+    /* letter-spacing: 6px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .rainbowBorder {
@@ -351,21 +384,6 @@ header {
     background: #000;
 }
 
-
-@keyframes rainbow {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
-
 @media (max-width: 650px) {
     .top {
         max-width: 85%;
@@ -391,11 +409,11 @@ header {
         font-size: 28px;
     }
 
-    .box i, .block i {
+    .box i, .rainbowCard i {
         font-size: 60px;
     }
 
-    .box h4, .block h4 {
+    .box h4, .rainbowCard h4 {
         font-size: 23px;
     }
 
