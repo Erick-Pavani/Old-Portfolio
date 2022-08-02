@@ -24,6 +24,7 @@ main {
     flex-direction: column;
     gap: 50px;
     height: 100%;
+    margin-top: 13vh;
 }
 
 .title {
@@ -345,6 +346,9 @@ header {
     width: 100%;
     color: white;
     font-size: 20px;
+    position: fixed;
+    z-index: 50;
+    background: #000;
 }
 
 
