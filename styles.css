@@ -332,7 +332,6 @@ main {
     width: calc(100% - 4px);
     min-height: 50px;
     min-width: 50px;
-    padding: 10px;
     /* background: rgb(57, 57, 57); */
     background: #000;
     border-radius: 15px;
