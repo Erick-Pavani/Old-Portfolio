@@ -36,6 +36,12 @@ ul {
     flex-wrap: wrap;
 }
 
+.nome {
+    padding: 15px;
+    display: none;
+    font-size: 27px;
+}
+
 main {
     display: flex;
     align-items: center;
@@ -439,12 +445,34 @@ main {
 }
 
 @media (max-width: 500px) {
+    .top {
+        margin-top: 15px;
+    }
+
     .title {
         font-size: 35px;
     }
 
     header {
         font-size: 15px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav .nome {
+        display: inline-block;
+    }
+
+    header nav .menu {
+        display: inline-block;
     }
 }
 
@@ -466,4 +494,85 @@ main {
     header {
         font-size: 10px;
     }
+}
+
+:root {
+    --speed: 0.25s;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+    background-color: #232423;
+    box-shadow: 0 0 2px 2px #ccc;
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: all 0.25s;
+    display: none;
+}
+
+.menu:hover {
+    box-shadow: 0 0 1px 1px #bbb;  
+}
+
+.menu_line {
+    background-color: gold; 
+}
+
+.menu_line {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 0.3em;
+    border-radius: 0.25em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu_line-q {
+    transition: transform calc(var(--speed) * 2);
+}
+
+.on .menu_line-q {
+    transition: transform calc(var(--speed) * 2);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    width: 100%;
+}
+
+path {
+    fill: none;
+    stroke-width: 8px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.path-a {
+    stroke: gold;
+    stroke-dasharray: 32 300;
+    transition: all calc(var(--speed) * 2);
+    -webkit-transition: all calc(var(--speed) * 2);
+    -moz-transition: all calc(var(--speed) * 2);
+    -ms-transition: all calc(var(--speed) * 2);
+    -o-transition: all calc(var(--speed) * 2);
+}
+
+.on .path-a {
+    stroke: gold;
+    stroke-dasharray: 32 300;
+    transition: all calc(var(--speed) * 2);
+    -webkit-transition: all calc(var(--speed) * 2);
+    -moz-transition: all calc(var(--speed) * 2);
+    -ms-transition: all calc(var(--speed) * 2);
+    -o-transition: all calc(var(--speed) * 2);
+    stroke-dasharray: 16 300;
+    stroke-dashoffset: -85;
 }
