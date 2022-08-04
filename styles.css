@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -137,7 +136,8 @@ main {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     will-change: transform;
-    /* -webkit-mask-image: -webkit-radial-gradient(white, black);  */
+    /* mask-image: radial-gradient(white, black);
+    -webkit-mask-image: -webkit-radial-gradient(white, black);  */
 }
 
 .box::before {
@@ -271,7 +271,8 @@ main {
     justify-content: center;
     gap: 20px;
     will-change: transform;
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    /* mask-image: radial-gradient(white, black);
+    -webkit-mask-image: -webkit-radial-gradient(white, black); */
 }
 
 .rainbowCard::before {
