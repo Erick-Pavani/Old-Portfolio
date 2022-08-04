@@ -126,6 +126,7 @@ main {
     background-image: conic-gradient(transparent, transparent, #00ccff);
     animation: animate 4s linear infinite;
     -webkit-animation: animate 4s linear infinite;
+    overflow: hidden;
 }
 
 .box::after
@@ -137,7 +138,7 @@ main {
     background-image: conic-gradient(transparent, transparent, #d400d4);
     animation: animate 4s linear infinite;
     animation-delay: -2s;
-    border: solid red 80px;
+    overflow: hidden;
 }
 
 @keyframes animate
@@ -273,6 +274,7 @@ main {
     left: -25%;
     top: -25%;
     animation: spin 1.5s linear infinite;
+    overflow: hidden;
 }
 
 @keyframes spin {
