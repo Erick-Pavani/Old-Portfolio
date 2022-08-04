@@ -128,6 +128,11 @@ main {
     background-image: conic-gradient(transparent, transparent, #00ccff);
     animation: animate 4s linear infinite;
     -webkit-animation: animate 4s linear infinite;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .box::after
@@ -139,6 +144,11 @@ main {
     background-image: conic-gradient(transparent, transparent, #d400d4);
     animation: animate 4s linear infinite;
     animation-delay: -2s;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 @keyframes animate
@@ -274,6 +284,11 @@ main {
     left: -25%;
     top: -25%;
     animation: spin 1.5s linear infinite;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
 }
 
 @keyframes spin {
@@ -344,6 +359,8 @@ main {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    border: none;
+    outline: none;
 }
 
 /* .gradientCard:hover .card {
