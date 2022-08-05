@@ -49,7 +49,7 @@ main {
     flex-direction: column;
     gap: 50px;
     height: 100%;
-    margin-top: 9vh;
+    margin-top: 13vh;
     width: 100%;
 }
 
@@ -59,56 +59,28 @@ main {
     display: flex;
 }
 
-.title span:nth-child(1) {
+.title span:nth-child(6n + 1) {
     color: #fd004c;
 }
 
-.title span:nth-child(2) {
+.title span:nth-child(6n + 2) {
     color: #fe9000;
 }
 
-.title span:nth-child(3) {
+.title span:nth-child(6n + 3) {
     color: #fff020;
 }
 
-.title span:nth-child(4) {
+.title span:nth-child(6n + 4) {
     color: #3edf4b;
 }
 
-.title span:nth-child(5) {
+.title span:nth-child(6n + 5) {
     color: #3363ff;
 }
 
-.title span:nth-child(6) {
+.title span:nth-child(6n + 6) {
     color: #b102b7;
-}
-
-.title span:nth-child(7) {
-    color: #fd004c;
-}
-
-.title span:nth-child(8) {
-    color: #fe9000;
-}
-
-.title span:nth-child(9) {
-    color: #fff020;
-}
-
-.title span:nth-child(10) {
-    color: #3edf4b;
-}
-
-.title span:nth-child(11) {
-    color: #3363ff;
-}
-
-.title span:nth-child(12) {
-    color: #b102b7;
-}
-
-.title span:nth-child(13) {
-    color: #fd004c;
 }
 
 .title .space {
@@ -210,6 +182,7 @@ main {
     -moz-transform: scale(1.3) rotate(360deg);
     -ms-transform: scale(1.3) rotate(360deg);
     -o-transform: scale(1.3) rotate(360deg);
+    overflow: hidden;
 }
 
 .box h4, .rainbowCard h4, .card h4 {
@@ -234,6 +207,7 @@ main {
     -moz-transform: scale(1.3);
     -ms-transform: scale(1.3);
     -o-transform: scale(1.3);
+    overflow: hidden;
 }
 
 .loader {
@@ -358,6 +332,7 @@ main {
     border: none;
     outline: none;
     z-index: 1;
+    overflow: hidden;
 }
 
 /* .gradientCard:hover .card {
@@ -446,7 +421,7 @@ main {
 
 @media (max-width: 500px) {
     .top {
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     .title {
@@ -507,24 +482,24 @@ main {
 .menu {
     position: relative;
     display: inline-block;
-    width: 3em;
-    height: 3em;
+    width: 50px;
+    height: 50px;
     margin: 0.5em;
     cursor: pointer;
     transition: all 0.25s;
     display: none;
 }
 
-.menu:hover {
+/* .menu:hover {
     box-shadow: 0 0 1px 1px #bbb;  
-}
+} */
 
 .menu_line {
     background: gold;
     position: absolute;
     top: 50%;
     width: 50%;
-    height: 0.3em;
+    height: 5px;
     border-radius: 0.25em;
     left: 50%;
     transform: translate(-50%, -50%);
