@@ -1,0 +1,11 @@
+:root {
+    --gradient-1: #009FFF;
+    --gradient-2: #ec2F4B;
+    --gradient-top-1: #000;
+    --gradient-top-2: #000;
+}
+
+body.dark {
+    --gradient-top-1: #ffffff;
+    --gradient-top-2: #ffffff;
+}

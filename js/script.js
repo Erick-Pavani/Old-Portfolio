@@ -1,4 +1,4 @@
-mobile = document.getElementById('menu');
+const mobile = document.getElementById('menu');
 
 function setMenu(e) {
     e.classList.toggle('on');
@@ -12,4 +12,10 @@ document.addEventListener('click', function(event) {
     }
 });
 
-
+window.addEventListener("scroll", () => 
+{
+    if (mobile.classList.contains("on"))
+    {
+        setMenu(mobile);    
+    }
+})
