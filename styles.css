@@ -474,6 +474,10 @@ main {
     header nav .menu {
         display: inline-block;
     }
+
+    header nav .mobile {
+        display: block;
+    }
 }
 
 @media (max-width: 350px) {
@@ -503,8 +507,6 @@ main {
 .menu {
     position: relative;
     display: inline-block;
-    background-color: #232423;
-    box-shadow: 0 0 2px 2px #ccc;
     width: 3em;
     height: 3em;
     margin: 0.5em;
@@ -575,4 +577,38 @@ path {
     -o-transition: all calc(var(--speed) * 2);
     stroke-dasharray: 16 300;
     stroke-dashoffset: -85;
+}
+
+.mobileMenu {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    font-size: 25px ;
+}
+
+.appear {
+    opacity: 1;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+}
+
+header nav .mobile {
+    display: none;
+    z-index: 50;
+}
+
+.mobileMenu .rainbowBorder {
+    width: 50%;
 }

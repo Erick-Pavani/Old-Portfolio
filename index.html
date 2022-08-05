@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2546165bae.js" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <title>Animated CSS Cards</title>
 </head>
@@ -19,7 +19,7 @@
                 <li>Contato</li>
             </ul>
             <span class="nome">Erick</span>
-            <div class="menu" onclick="setMenu(this);">
+            <div id="menu" class="menu" onclick="setMenu(this);">
                 <div class="menu_line menu_line-q"></div>
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 80 80">
                     <path class="path-a" d="M 24 26 h 36 a 14 14 0 0 1 -6 28 l -28 -28" />
@@ -28,6 +28,16 @@
             </div>
         </nav>
         <div class="rainbowBorder"></div>
+        <div class="mobileMenu">
+            <p>Sobre Mim</p>
+            <div class="rainbowBorder"></div>
+            <p>Tecnologias</p>
+            <div class="rainbowBorder"></div>
+            <p>Projetos</p>
+            <div class="rainbowBorder"></div>
+            <p>Contato</p>
+        </div>
+        <div class="rainbowBorder mobile"></div>
     </header>
     <main>
         <div class="top">
