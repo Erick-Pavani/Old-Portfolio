@@ -72,7 +72,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 50px;
     height: 100%;
     margin-top: 13vh;
     width: 100%;
@@ -82,10 +81,6 @@ main {
     margin-bottom: 10px;
     display: flex;
     font-size: 65px;
-}
-
-.title .space {
-    margin-right: 20px;
 }
 
 .cards {
@@ -293,6 +288,10 @@ main {
     .box h4 {
         font-size: 22px;
     }
+
+    .box .too_long {
+        font-size: 19px !important;
+    }
 }
 
 @media (max-width: 500px) {
@@ -348,6 +347,10 @@ main {
 
     .box h4 {
         font-size: 17.5px;
+    }
+
+    .box .too_long {
+        font-size: 15px !important;
     }
 }
 
@@ -502,4 +505,32 @@ header nav .mobile {
 .rounded img, .rounded_mobile img {
     width: 100%;
     height: 100%;
+}
+
+.disabled {
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    padding: 0;
+    margin: 0;
+}
+
+.tecnologias_tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    flex-direction: column;
+    gap: 50px;
+    transition: opacity 2.5s ease-in-out;
+    opacity: 1;
+    height: auto;
+    -webkit-transition: opacity 2.5s ease-in-out;
+    -moz-transition: opacity 2.5s ease-in-out;
+    -ms-transition: opacity 2.5s ease-in-out;
+    -o-transition: opacity 2.5s ease-in-out;
+}
+
+.too_long {
+    font-size: 25px !important;
 }
