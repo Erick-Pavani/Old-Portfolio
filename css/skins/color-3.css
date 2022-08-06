@@ -99,6 +99,6 @@
     background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2))
 }
 
-.name_picture .rounded {
+.name_picture .rounded_mobile {
     border: 1px solid var(--gradient-1);
 }
