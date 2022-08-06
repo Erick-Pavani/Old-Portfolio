@@ -9,3 +9,117 @@ body.dark {
     --gradient-top-1: #ffffff;
     --gradient-top-2: #ffffff;
 }
+
+.title span:nth-child(6n + 1) {
+    color: #fd004c;
+}
+
+.title span:nth-child(6n + 2) {
+    color: #fe9000;
+}
+
+.title span:nth-child(6n + 3) {
+    color: #fff020;
+}
+
+.title span:nth-child(6n + 4) {
+    color: #3edf4b;
+}
+
+.title span:nth-child(6n + 5) {
+    color: #3363ff;
+}
+
+.title span:nth-child(6n + 6) {
+    color: #b102b7;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094, #F90000 );
+    animation: gradient 20s linear infinite;
+    background-size: 500%;
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #F90000, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094 , #F90000);
+    animation: gradient 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    will-change: transform;
+}
+
+.box::before {
+    content: '';
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    background-image: conic-gradient(#fd004c,#fe9000,#fff020,#3edf4b,#3363ff,#b102b7,#fd004c);
+    left: -25%;
+    top: -25%;
+    animation: spin 1.5s linear infinite;
+    -webkit-animation: spin 1.5s linear infinite;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    background: var(--primary-color);
+    height: 94%;
+    width: 94%;
+    top: 3%;
+    left: 3%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box i {
+    background-image: conic-gradient(#fd004c,#fe9000,#fff020,#3edf4b,#3363ff,#b102b7,#fd004c);
+}
+
+.box h4 {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 20%,#fff020 35%,#3edf4b 50%,#3363ff 65%,#b102b7 80%);
+}
+
+.rainbowBorder {
+    background: linear-gradient(279.24deg, rgb(247, 20, 20) 13.99%, rgb(247, 143, 20) 30.12%, rgb(255, 223, 0) 52.52%, rgb(51, 214, 37) 76.26%, rgb(53, 134, 255) 94.3%);
+}
+
+.style-switcher .s-icon {
+    background-image: conic-gradient(#fd004c,#fe9000,#fff020,#3edf4b,#3363ff,#b102b7,#fd004c);
+}
+
+.name_picture .rounded {
+    border: 1px solid #009FFF;
+}
+
