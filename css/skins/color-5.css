@@ -104,11 +104,14 @@ body.dark {
 }
 
 .box i {
-    background-image: conic-gradient(#fd004c,#fe9000,#fff020,#3edf4b,#3363ff,#b102b7,#fd004c);
+    /* background-image: conic-gradient(#fd004c,#fe9000,#fff020,#3edf4b,#3363ff,#b102b7,#fd004c); */
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 }
 
 .box h4 {
-    background: linear-gradient(45deg, #fd004c 0%,#fe9000 20%,#fff020 35%,#3edf4b 50%,#3363ff 65%,#b102b7 80%);
+    /* background: linear-gradient(45deg, #fd004c 0%,#fe9000 20%,#fff020 35%,#3edf4b 50%,#3363ff 65%,#b102b7 80%); */
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+
 }
 
 .rainbowBorder {
@@ -120,10 +123,18 @@ body.dark {
 }
 
 .rounded_desktop .rounded {
-    border: 1px solid #ffffff;
+    border: 1px solid var(--gradient-top-1);
 }
 
 .name_picture .rounded_mobile {
     border: 1px solid #009FFF;
+}
+
+.home_content h1 {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.home_content h3 {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 }
 

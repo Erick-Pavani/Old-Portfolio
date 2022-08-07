@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2546165bae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <script src="./js/script.js" defer></script>
     <script src="./js/style-switcher.js" defer></script>
     <script src="./js/tecnologias-pagination.js" defer></script>
@@ -62,158 +65,167 @@
         <div class="rainbowBorder mobile"></div>
     </header>
     <main>
-        <!-- Tecnologias -->
-        <div>
-            <button onclick="setActiveTab('Front-End')">Front-End</button>
-            <button onclick="setActiveTab('Back-End')">Back-End</button>
-            <button onclick="setActiveTab('General')">Gerais</button>
+        <!-- HomePage Begin -->
+        <div class="page HomePage" title="HomePage">
+            <div class="matrix-rain">
+                <canvas id="canvas1"></canvas>
+            </div>
+            <div class="home_content">
+                <h1>Erick</h1>
+                <h3>Full Stack Dev</h3>
+                <div class="gradientButton">
+                    <button class="btn">
+                        Currículo
+                    </button>
+                </div>
+            </div>
         </div>
-        <!-- Front-End Begin -->
-        <div class="tecnologias_tabs" title="Front-End">
-            <div class="top">
+        <!-- HomePage End -->
+        <!-- Tecnologias Begin-->
+        <div class="page Tecnologias" title="Tecnologias" style="display: none;">
+            <div class="tecnologias-pagination">
+                <button onclick="setActiveTab('Front-End')">Front-End</button>
+                <button onclick="setActiveTab('Back-End')">Back-End</button>
+                <button onclick="setActiveTab('General')">Gerais</button>
+            </div>
+            <!-- Front-End Begin -->
+            <div class="tecnologias_tabs" title="Front-End">
+                <div class="top">
+                    <h1 class="title">
+                        <span>F</span>
+                        <span>r</span>
+                        <span>o</span>
+                        <span>n</span>
+                        <span>t</span>
+                        <span>-</span>
+                        <span>E</span>
+                        <span>n</span>
+                        <span>d</span>
+                    </h1>
+                    <div class="loader"></div>
+                </div>
+                <div class="cards">
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-brands fa-html5"></i>
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-brands fa-sass"></i>
+                        <h4>Sass</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <h4>Bootstrap</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="devicon-tailwindcss-plain colored"></i>
+                        <h4>Tailwind</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-brands fa-js"></i>
+                        <h4>Javascript</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-brands fa-react"></i>
+                        <h4>React</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Front-End End -->
+            <!-- Back-End Begin -->
+            <div class="tecnologias_tabs disabled" title="Back-End">
+                <div class="top">
                 <h1 class="title">
-                    <span>F</span>
-                    <span>r</span>
-                    <span>o</span>
-                    <span>n</span>
-                    <span>t</span>
+                    <span>B</span>
+                    <span>a</span>
+                    <span>c</span>
+                    <span>k</span>
                     <span>-</span>
                     <span>E</span>
                     <span>n</span>
                     <span>d</span>
                 </h1>
                 <div class="loader"></div>
+                </div>
+                <div class="cards">
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-brands fa-python"></i>
+                        <h4>Python</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="devicon-flask-original colored"></i>
+                        <h4>Flask</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="devicon-django-plain colored"></i>
+                        <h4>Django</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-solid fa-database"></i>
+                        <h4>SQL</h4>
+                    </div>
+                </div>
             </div>
-            <div class="cards">
-                <div class="box">
-                    <span></span>
-                    <i class="fa-brands fa-html5"></i>
-                    <h4>HTML</h4>
+            <!-- Back-End End -->
+            <!-- General Begin -->
+            <div class="tecnologias_tabs disabled" title="General">
+                <div class="top">
+                <h1 class="title">
+                    <span>G</span>
+                    <span>e</span>
+                    <span>r</span>
+                    <span>a</span>
+                    <span>i</span>
+                    <span>s</span>
+                </h1>
+                <div class="loader"></div>
                 </div>
-                <div class="box">
-                    <span></span>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <h4>CSS</h4>
+                <div class="cards">
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h4>Git</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-brands fa-github"></i>
+                        <h4>Github</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="devicon-vscode-plain colored"></i>
+                        <h4>VS Code</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="devicon-selenium-original colored"></i>
+                        <h4>Selenium</h4>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <i class="fa-solid fa-language"></i>
+                        <h4 class="too_long">Inglês fluente</h4>
+                    </div>
                 </div>
-                <div class="box">
-                    <span></span>
-                    <i class="fa-brands fa-sass"></i>
-                    <h4>Sass</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <h4>Bootstrap</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="devicon-tailwindcss-plain colored"></i>
-                    <h4>Tailwind</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="fa-brands fa-js"></i>
-                    <h4>Javascript</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="fa-brands fa-react"></i>
-                    <h4>React</h4>
-                </div>
-            <!-- <div class="box">
-                <span></span>
-                <i class="fa-brands fa-python"></i>
-                <h4>Python</h4>
-            </div> -->
             </div>
+            <!-- General End -->
         </div>
-        <!-- Front-End End -->
-        <!-- Back-End Begin -->
-        <div class="tecnologias_tabs disabled" title="Back-End">
-            <div class="top">
-            <h1 class="title">
-                <span>B</span>
-                <span>a</span>
-                <span>c</span>
-                <span>k</span>
-                <span>-</span>
-                <span>E</span>
-                <span>n</span>
-                <span>d</span>
-            </h1>
-            <div class="loader"></div>
-            </div>
-            <div class="cards">
-                <div class="box">
-                    <span></span>
-                    <i class="fa-brands fa-python"></i>
-                    <h4>Python</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="devicon-flask-original colored"></i>
-                    <h4>Flask</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="devicon-django-plain colored"></i>
-                    <h4>Django</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="fa-solid fa-database"></i>
-                    <h4>SQL</h4>
-                </div>
-            </div>
-        </div>
-        <!-- Back-End End -->
-        <!-- General Begin -->
-        <div class="tecnologias_tabs disabled" title="General">
-            <div class="top">
-            <h1 class="title">
-                <span>G</span>
-                <span>e</span>
-                <span>r</span>
-                <span>a</span>
-                <span>i</span>
-                <span>s</span>
-            </h1>
-            <div class="loader"></div>
-            </div>
-            <div class="cards">
-                <div class="box">
-                    <span></span>
-                    <i class="fa-brands fa-git-alt"></i>
-                    <h4>Git</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="fa-brands fa-github"></i>
-                    <h4>Github</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="devicon-vscode-plain colored"></i>
-                    <h4>VS Code</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="devicon-selenium-original colored"></i>
-                    <h4>Selenium</h4>
-                </div>
-                <div class="box">
-                    <span></span>
-                    <i class="fa-solid fa-language"></i>
-                    <h4 class="too_long">Inglês fluente</h4>
-                </div>
-            </div>
-        </div>
-        <!-- General End -->
-        <!-- <div class="gradientButton">
-            <button class="btn">
-                Create
-            </button>
-        </div> -->
+        <!-- Tecnologias End -->
     </main>
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
@@ -224,12 +236,13 @@
         </div>
         <h4>Cores</h4>
         <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            <span class="color-1" onclick="setActiveStyle('color-1'), alternateGradient()"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2'), alternateGradient()"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3'), alternateGradient()"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4'), alternateGradient()"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5'), alternateGradient()"></span>
         </div>
     </div>
+    <script src="./js/matrix-rain.js"></script>
 </body>
 </html>
