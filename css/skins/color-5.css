@@ -104,12 +104,10 @@ body.dark {
 }
 
 .box i {
-    /* background-image: conic-gradient(#fd004c,#fe9000,#fff020,#3edf4b,#3363ff,#b102b7,#fd004c); */
     background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 }
 
 .box h4 {
-    /* background: linear-gradient(45deg, #fd004c 0%,#fe9000 20%,#fff020 35%,#3edf4b 50%,#3363ff 65%,#b102b7 80%); */
     background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 
 }
@@ -136,5 +134,13 @@ body.dark {
 
 .home_content h3 {
     background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.gradientButton {
+    background: linear-gradient(95.11deg, rgb(255, 138, 0) 9.41%, rgb(234, 54, 183) 31.46%, rgb(82, 0, 255) 66.73%, rgb(47, 205, 255) 95.4%);
+}
+
+.gradientButton:hover .btn {
+    background: linear-gradient(90.22deg, rgba(247, 20, 20, 0.2) -1.27%, rgba(235, 56, 179, 0.2) 33.43%, rgba(126, 118, 254, 0.2) 64.39%, rgba(121, 57, 255, 0.2) 101.23%), linear-gradient(0deg, rgb(57, 57, 57), rgb(57, 57, 57));
 }
 

@@ -49,6 +49,7 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     will-change: transform;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
 }
 
 .box::before {
@@ -110,4 +111,12 @@
 .home_content h3 {
     background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
 
+}
+
+.gradientButton {
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2));
+}
+
+.gradientButton:hover .btn {
+    background: linear-gradient(90deg, rgba(0, 242, 96, 0.2), rgba(5, 117, 230, 0.2)), linear-gradient(0deg, rgb(57, 57, 57), rgb(57, 57, 57));
 }
