@@ -10,28 +10,8 @@ body.dark {
     --gradient-top-2: #ffffff;
 }
 
-.title span:nth-child(6n + 1) {
-    color: #fd004c;
-}
-
-.title span:nth-child(6n + 2) {
-    color: #fe9000;
-}
-
-.title span:nth-child(6n + 3) {
-    color: #fff020;
-}
-
-.title span:nth-child(6n + 4) {
-    color: #3edf4b;
-}
-
-.title span:nth-child(6n + 5) {
-    color: #3363ff;
-}
-
-.title span:nth-child(6n + 6) {
-    color: #b102b7;
+.title {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 }
 
 .loader::before {
@@ -54,8 +34,8 @@ body.dark {
 }
 
 .box {
-    width: 250px;
-    height: 250px;
+    width: 185px;
+    height: 185px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -144,3 +124,18 @@ body.dark {
     background: linear-gradient(90.22deg, rgba(247, 20, 20, 0.2) -1.27%, rgba(235, 56, 179, 0.2) 33.43%, rgba(126, 118, 254, 0.2) 64.39%, rgba(121, 57, 255, 0.2) 101.23%), linear-gradient(0deg, rgb(57, 57, 57), rgb(57, 57, 57));
 }
 
+.home-links i {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.btn span {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.tecnologias-pagination button span {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.top .tecnologias_prev_next {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}

@@ -18,4 +18,13 @@ window.addEventListener("scroll", () =>
     {
         setMenu(mobile);    
     }
+});
+
+// typing animation
+
+var typed = new Typed(".typing", {
+    strings: ["Front-End Dev", "Back-End Dev", "Full-Stack Dev", "Web Developer"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true
 })

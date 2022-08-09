@@ -2,20 +2,76 @@
     display: none !important;
 }
 
+.Tecnologias {
+    margin-top: 15vh;
+    overflow-x: hidden;
+}
+
+.tecnologias-pagination {
+    margin-bottom: 15px;
+}
+
+.tecnologias-pagination button {
+    padding: 25px;
+    border-radius: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background: var(--primary-color);
+    cursor: pointer;
+    border: none;
+}
+
+.tecnologias-pagination button span {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 98vw;
+    padding: 0 25px;
+}
+
+.top .tecnologias_prev_next {
+    outline: none;
+    border: none;
+    font-size: 85px;
+    cursor: pointer;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .title {
     margin-bottom: 10px;
     display: flex;
     font-size: 65px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
-    width: 100%;
+    gap: 30px;
+    width: 85%;
     flex-wrap: wrap;
-    row-gap: 50px;
+    row-gap: 30px;
     padding: 30px;
 }
 
@@ -111,6 +167,33 @@
     gap: 10px;
 }
 
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+
+    0% {
+        background-position: 500% 0;
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
 
 @media (min-width: 651px) {
     .box:hover i {
@@ -195,4 +278,53 @@
     .cards {
         padding: 5px;
     }
+}
+
+@media (max-width: 720px) {
+    .top .tecnologias_prev_next {
+        font-size: 25px;
+    }
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    --slider-index: 0;
+    display: flex;
+    max-width: 98vw !important;
+    transform: translateX(calc(var(--slider-index) * -100%));
+    transition: transform 1s ease-in-out;
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -ms-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+}
+
+.barra-progresso {
+    display: flex;
+    gap: .25rem;
+}
+
+.progress-item {
+    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
+    height: .5rem;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.progress-item.active {
+    background: linear-gradient(35deg, red, blue);
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

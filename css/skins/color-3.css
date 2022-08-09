@@ -5,7 +5,7 @@
     --gradient-top-2: #0575E6;
 }
 
-.title span {
+.title {
     background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
     color: transparent;
     background-clip: text;
@@ -35,8 +35,8 @@
 
 .box {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 185px;
+    height: 185px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,4 +119,20 @@
 
 .gradientButton:hover .btn {
     background: linear-gradient(90deg, rgba(0, 242, 96, 0.2), rgba(5, 117, 230, 0.2)), linear-gradient(0deg, rgb(57, 57, 57), rgb(57, 57, 57));
+}
+
+.home-links i {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+.btn span {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+.tecnologias-pagination button span {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+.top .tecnologias_prev_next {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
 }
