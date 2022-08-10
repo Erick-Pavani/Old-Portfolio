@@ -1,3 +1,5 @@
+var teste = 0;
+
 document.addEventListener("click", e => {
     let handle
     if (e.target.matches(".handle")) {
@@ -7,20 +9,15 @@ document.addEventListener("click", e => {
     }
     if (handle != null) {
         onHandleClick(handle)
-        setTitle();
     }
-})
-
+    setTitle();
+});
 
 document.addEventListener("load", () => {
-    const titulo = document.querySelector(".title");
-    titulo.innerHTML = "Front-End"
-})
-
-const throttleProgressBar = throttle(() => {
-    document.querySelectorAll(".barra-progresso").forEach(calculateProgressBar)
-}, 250);
-window.addEventListener("resize", throttleProgressBar);
+    const barItem = document.querySelectorAll(".progress-item")[0];
+    console.log(barItem);
+    barItem.classList.add("active");
+});
 
 document.querySelectorAll(".barra-progresso").forEach(calculateProgressBar);
 
@@ -80,40 +77,25 @@ function onHandleClick(handle) {
     }
 }
 
-function throttle(cb, delay = 1000) {
-    let shouldWait = false
-    let waitingArgs
-    const timeoutFunc = () => {
-        if (waitingArgs == null) {
-            shouldWait = false
-        } else {
-            cb(...waitingArgs)
-            waitingArgs = null
-            setTimeout(timeoutFunc, delay)
-        }
-    }
-    return (...args) => {
-        if (shouldWait) {
-            waitingArgs = args
-            return
-        }
-        cb(...args)
-        shouldWait = true
-        setTimeout(timeoutFunc, delay)
-    }
-}
-
 function setTitle() {
     const slider = document.querySelectorAll(".slider")[0];
     let sliderIndex = parseInt(
         getComputedStyle(slider).getPropertyValue("--slider-index")
     );
     const titulo = document.querySelector(".title");
-    if(sliderIndex === 0) {
-        titulo.innerHTML = "Front-End";
-    } else if (sliderIndex === 1) {
+    if (sliderIndex === 1) {
         titulo.innerHTML = "Back-End";
-    } else {
+    } else if (sliderIndex === 2) {
         titulo.innerHTML = "Gerais";
+    } else {
+        titulo.innerHTML = "Front-End";
     }
 }
+
+document.addEventListener("mousemove", () => {
+    if (teste < 1){
+        const barItem = document.querySelectorAll(".progress-item")[0];
+        barItem.classList.add("active");
+    }
+    teste++;
+})
