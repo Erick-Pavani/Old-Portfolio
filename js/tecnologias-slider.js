@@ -1,4 +1,4 @@
-var teste = 0;
+var start = 0;
 
 document.addEventListener("click", e => {
     let handle
@@ -11,12 +11,6 @@ document.addEventListener("click", e => {
         onHandleClick(handle)
     }
     setTitle();
-});
-
-document.addEventListener("load", () => {
-    const barItem = document.querySelectorAll(".progress-item")[0];
-    console.log(barItem);
-    barItem.classList.add("active");
 });
 
 document.querySelectorAll(".barra-progresso").forEach(calculateProgressBar);
@@ -93,9 +87,9 @@ function setTitle() {
 }
 
 document.addEventListener("mousemove", () => {
-    if (teste < 1){
+    if (start < 1){
         const barItem = document.querySelectorAll(".progress-item")[0];
         barItem.classList.add("active");
     }
-    teste++;
+    start++;
 })
