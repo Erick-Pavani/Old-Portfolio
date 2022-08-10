@@ -29,13 +29,6 @@
     <!--------------------------------------- Color Picker -------------------------------------------------->
     <link rel="stylesheet" href="./css/colorpicker.css">
 
-    <!--------------------------------------- Pages -------------------------------------------------->
-    <link rel="stylesheet" href="./css/pages/home-page.css" class="alternate-page" title="Home-Page" disabled>
-    <link rel="stylesheet" href="./css/pages/sobre-mim.css" class="alternate-page" title="Sobre-Mim" disabled>
-    <link rel="stylesheet" href="./css/pages/tecnologias.css" class="alternate-page" title="Tecnologias" disabled>
-    <link rel="stylesheet" href="./css/pages/projetos.css" class="alternate-page" title="Projetos" disabled>
-    <link rel="stylesheet" href="./css/pages/contato.css" class="alternate-page" title="Contato" disabled>
-    
     <!--------------------------------------- Title -------------------------------------------------->
     <title>Erick’s Portfolio</title>
 
@@ -47,10 +40,10 @@
 </head>
 <body class="dark">
     <header>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li>
-                    <a onclick="setActivePage('Home-Page')">
+                    <a href="#HomePage" class="HomePage active">
                         <div class="rounded_desktop">
                             <div class="rounded">
                                 <img src="./img/Foto de Perfil.jpg" alt="Foto de Perfil">
@@ -60,34 +53,34 @@
                     </a>
                 </li>
                 <li>
-                    <a onclick="setActivePage('Sobre-Mim')">
+                    <a href="#SobreMim">
                         Sobre Mim
                     </a>
                 </li>
                 <li>
-                    <a onclick="setActivePage('Tecnologias')">
+                    <a href="#Tecnologias">
                         Tecnologias
                     </a>
                 </li>
                 <li>
-                    <a onclick="setActivePage('Projetos')">
+                    <a href="#Projetos">
                         Projetos
                     </a>
                 </li>
                 <li>
-                    <a onclick="setActivePage('Contato')">
+                    <a href="#Contato">
                         Contato
                     </a>
                 </li>
             </ul>
             <div class="name_picture">
-                <a href="#" onclick="setActivePage('Home-Page')">
+                <a href="#">
                     <div class="rounded_mobile">
                         <img src="./img/Foto de Perfil.jpg" alt="Foto de perfil">
                     </div>
                 </a>
             </div>
-            <a href="#" onclick="setActivePage('Home-Page')">
+            <a href="#">
                 <span class="nome">Erick - Full Stack Dev</span>
             </a>
             <div id="menu" class="menu" onclick="setMenu(this);">
@@ -100,35 +93,37 @@
         </nav>
         <div class="rainbowBorder"></div>
         <div class="mobileMenu">
-            <p>
-                <a onclick="setActivePage('Sobre-Mim')">
-                    Sobre Mim
-                </a>
-            </p>
-            <div class="rainbowBorder"></div>
-            <p>
-                <a onclick="setActivePage('Tecnologias')">
-                    Tecnologias
-                </a>
-            </p>
-            <div class="rainbowBorder"></div>
-            <p>
-                <a onclick="setActivePage('Projetos')">
-                    Projetos
-                </a>
-            </p>
-            <div class="rainbowBorder"></div>
-            <p>
-                <a onclick="setActivePage('Contato')">
-                    Contato
-                </a>
-            </p>
+            <ul>
+                <li>
+                    <a href="#SobreMim">
+                        Sobre Mim
+                    </a>
+                </li>
+                <div class="rainbowBorder"></div>
+                <li>
+                    <a href="#Tecnologias">
+                        Tecnologias
+                    </a>
+                </li>
+                <div class="rainbowBorder"></div>
+                <li>
+                    <a href="#Projetos">
+                        Projetos
+                    </a>
+                </li>
+                <div class="rainbowBorder"></div>
+                <li>
+                    <a href="#Contato">
+                        Contato
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="rainbowBorder mobile"></div>
     </header>
     <main>
         <!-- HomePage Begin -->
-        <div class="HomePage" title="HomePage">
+        <div class="HomePage section active" id="HomePage">
             <div class="matrix-rain">
                 <canvas id="canvas1"></canvas>
             </div>
@@ -161,8 +156,15 @@
             </div>
         </div>
         <!-- HomePage End -->
+        <!-- SobreMim Begin -->
+        <div class="SobreMim section" id="SobreMim">
+            <h1 style="text-align: center; color: white; z-index: 2; font-size: larger; display: flex; align-self: center; justify-self: center;">
+                Sobre Mim
+            </h1>
+        </div>
+        <!-- SobreMim End-->
         <!-- Tecnologias Begin-->
-        <div class="Tecnologias" title="Tecnologias">
+        <div class="Tecnologias section" id="Tecnologias">
             <div class="progress-bar">
                 <div class="barra-progresso"></div>
             </div>
@@ -277,6 +279,20 @@
             </div>
         </div>
         <!-- Tecnologias End -->
+        <!-- Projetos Begin -->
+        <div class="Projetos section" id="Projetos">
+            <p style="text-align: center;">
+                Projetos
+            </p>
+        </div>
+        <!-- Projetos End-->
+        <!-- Contato Begin -->
+        <div class="Contato section" id="Contato">
+            <p style="text-align: center;">
+                Contato
+            </p>
+        </div>
+        <!-- Contato End-->
     </main>
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
@@ -301,3 +317,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 </body>
 </html>
+
+
+
+<!-- Testing -->
