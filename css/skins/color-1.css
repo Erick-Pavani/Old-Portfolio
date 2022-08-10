@@ -136,3 +136,7 @@
 .top .tecnologias_prev_next {
     background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
 }
+
+.progress-item.active {
+    background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}

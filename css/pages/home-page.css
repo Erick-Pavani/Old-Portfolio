@@ -175,6 +175,12 @@ body {
     color: #25D366 !important;
 }
 
+@media (max-width: 500px) {
+    .home_content {
+        margin-top: 15rem;
+    }
+}
+
 @media (max-width: 400px) {
     .home-links {
         gap: 25px;

@@ -43,7 +43,6 @@
     <script src="./js/page-switcher.js" async></script>
     <script src="./js/script.js" defer></script>
     <script src="./js/style-switcher.js" defer></script>
-    <script src="./js/tecnologias-pagination.js" defer></script>
 
 </head>
 <body class="dark">
@@ -51,7 +50,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#" onclick="setActivePage('Home-Page')">
+                    <a onclick="setActivePage('Home-Page')">
                         <div class="rounded_desktop">
                             <div class="rounded">
                                 <img src="./img/Foto de Perfil.jpg" alt="Foto de Perfil">
@@ -61,22 +60,22 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActivePage('Sobre-Mim')">
+                    <a onclick="setActivePage('Sobre-Mim')">
                         Sobre Mim
                     </a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActivePage('Tecnologias')">
+                    <a onclick="setActivePage('Tecnologias'), setTitle()">
                         Tecnologias
                     </a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActivePage('Projetos')">
+                    <a onclick="setActivePage('Projetos')">
                         Projetos
                     </a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActivePage('Contato')">
+                    <a onclick="setActivePage('Contato')">
                         Contato
                     </a>
                 </li>
@@ -102,25 +101,25 @@
         <div class="rainbowBorder"></div>
         <div class="mobileMenu">
             <p>
-                <a href="#" onclick="setActivePage('Sobre-Mim')">
+                <a onclick="setActivePage('Sobre-Mim')">
                     Sobre Mim
                 </a>
             </p>
             <div class="rainbowBorder"></div>
             <p>
-                <a href="#" onclick="setActivePage('Tecnologias')">
+                <a onclick="setActivePage('Tecnologias')">
                     Tecnologias
                 </a>
             </p>
             <div class="rainbowBorder"></div>
             <p>
-                <a href="#" onclick="setActivePage('Projetos')">
+                <a onclick="setActivePage('Projetos')">
                     Projetos
                 </a>
             </p>
             <div class="rainbowBorder"></div>
             <p>
-                <a href="#" onclick="setActivePage('Contato')">
+                <a onclick="setActivePage('Contato')">
                     Contato
                 </a>
             </p>
@@ -302,15 +301,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 </body>
 </html>
-
-
-
-
-<!-- <div class="tecnologias-pagination">
-    <button onclick="setActiveTab('Front-End')"><span>Front-End</span></button>
-    <button onclick="setActiveTab('Back-End')"><span>Back-End</span></button>
-    <button onclick="setActiveTab('General')"><span>Gerais</span></button>
-</div> -->
-<!-- <div class="tecnologias_tabs" title="Front-End"></div> -->
-<!-- <div class="tecnologias_tabs disabled" title="Back-End"></div> -->
-<!-- <div class="tecnologias_tabs disabled" title="General"></div> -->

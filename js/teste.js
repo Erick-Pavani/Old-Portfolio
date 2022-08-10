@@ -1,12 +1,20 @@
 document.addEventListener("click", e => {
-    setTitle();
     let handle
     if (e.target.matches(".handle")) {
         handle = e.target
     } else {
         handle = e.target.closest(".handle")
     }
-    if (handle != null) onHandleClick(handle)
+    if (handle != null) {
+        onHandleClick(handle)
+        setTitle();
+    }
+})
+
+
+document.addEventListener("load", () => {
+    const titulo = document.querySelector(".title");
+    titulo.innerHTML = "Front-End"
 })
 
 const throttleProgressBar = throttle(() => {
@@ -101,9 +109,8 @@ function setTitle() {
         getComputedStyle(slider).getPropertyValue("--slider-index")
     );
     const titulo = document.querySelector(".title");
-    console.log(titulo)
     if(sliderIndex === 0) {
-        titulo.innerHTML = "Front-End"
+        titulo.innerHTML = "Front-End";
     } else if (sliderIndex === 1) {
         titulo.innerHTML = "Back-End";
     } else {

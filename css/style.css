@@ -54,6 +54,7 @@ ul li {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+    cursor: pointer;
 }
 
 .nome {

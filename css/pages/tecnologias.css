@@ -7,34 +7,6 @@
     overflow-x: hidden;
 }
 
-.tecnologias-pagination {
-    margin-bottom: 15px;
-}
-
-.tecnologias-pagination button {
-    padding: 25px;
-    border-radius: 25px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    background: var(--primary-color);
-    cursor: pointer;
-    border: none;
-}
-
-.tecnologias-pagination button span {
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 35px;
-}
-
 .top {
     display: flex;
     align-items: center;
@@ -67,7 +39,6 @@
 .cards {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 30px;
     width: 85%;
     flex-wrap: wrap;
@@ -94,7 +65,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    font-size: 85px;
+    font-size: 55px;
     transition: 0.7s ease-in-out;
     -webkit-transition: 0.7s ease-in-out;
     -moz-transition: 0.7s ease-in-out;
@@ -108,12 +79,11 @@
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
-    overflow: hidden;
 }
 
 .box h4 {
     z-index: 1;
-    font-size: 30px;
+    font-size: 22px;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -157,7 +127,7 @@
 }
 
 .too_long {
-    font-size: 25px !important;
+    font-size: 18px !important;
 }
 
 .tecnologias-pagination {
@@ -195,6 +165,12 @@
     }
 }
 
+@media (min-width: 1070px) {
+    .tab {
+        justify-content: center;
+    }
+}
+
 @media (min-width: 651px) {
     .box:hover i {
         transform: scale(1.3) rotate(360deg);
@@ -213,6 +189,12 @@
         -ms-transform: scale(1.3);
         -o-transform: scale(1.3);
         overflow: hidden;
+    }
+}
+
+@media (max-width: 720px) {
+    .top .tecnologias_prev_next {
+        font-size: 25px;
     }
 }
 
@@ -280,18 +262,11 @@
     }
 }
 
-@media (max-width: 720px) {
-    .top .tecnologias_prev_next {
-        font-size: 25px;
-    }
-}
-
 .tab {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     min-width: 100%;
-    justify-content: center;
     align-items: center;
 }
 
@@ -316,11 +291,7 @@
     flex: 0 0 1.5rem;
     min-width: 1.5rem;
     height: .5rem;
-    background-color: rgba(255, 255, 255, .5);
-}
-
-.progress-item.active {
-    background: linear-gradient(35deg, red, blue);
+    background-color: var(--secondary-color);
 }
 
 .progress-bar {
