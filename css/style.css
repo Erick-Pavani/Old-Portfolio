@@ -892,7 +892,8 @@ header nav .mobile {
     position: absolute;
     left: 0;
     padding: 10px 0 5px;
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
+    color: var(--secondary-color);
     text-transform: uppercase;
     pointer-events: none;
     letter-spacing: 0.1em;
