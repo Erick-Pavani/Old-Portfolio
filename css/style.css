@@ -335,6 +335,7 @@ header nav .mobile {
 
 .HomePage {
     background: var(--primary-color);
+    margin-top: 10vh;
 }
 
 .HomePage canvas {
@@ -349,7 +350,7 @@ header nav .mobile {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 20vh; 
     min-height: 100%;
 }
 
@@ -499,7 +500,7 @@ header nav .mobile {
 
 @media (max-width: 500px) {
     .home_content {
-        margin-top: 15rem;
+        margin-top: 10rem;
     }
 }
 
