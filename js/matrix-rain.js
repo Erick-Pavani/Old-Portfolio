@@ -3,8 +3,7 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-
+let gradient;
 const styles = document.querySelectorAll(".alternate-style");
 
 function alternateGradient() {
@@ -12,10 +11,6 @@ function alternateGradient() {
         if (! style.disabled) {
             if (style.getAttribute("title") !== "color-5") {
                 gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-                // let r = document.querySelector(":root");
-                // let rs = getComputedStyle(r);
-                // let color1 = teste.getPropertyValue('--gradient-1');
-                // let color2 = teste.getPropertyValue('--gradient-2');
                 let color1 = "";
                 let color2 = "";
                 if (style.getAttribute("title") === "color-1") {

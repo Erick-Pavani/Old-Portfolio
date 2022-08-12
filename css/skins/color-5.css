@@ -143,3 +143,25 @@ body.dark {
 .progress-item.active {
     background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 }
+
+/* ----------------------------- Contato --------------------------- */
+
+.Contato h1 {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.Contato h3 {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+/* ----------------------------- Sobre Mim --------------------------- */
+
+.SobreMim h1 {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+/* ----------------------------- Projetos --------------------------- */
+
+.Projetos h1 {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
