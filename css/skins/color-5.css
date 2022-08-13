@@ -159,6 +159,47 @@ body.dark {
     background: linear-gradient(90deg, #ff1b69, #ff0, #2196f3, #9c27b0, #ff1b69);
 }
 
+.Contato button {
+    border: 3px solid #2196f3;
+}
+
+.Contato button:focus {
+    border-left: 2px solid #2196f3;
+    border: 2px solid #2196f3;
+}
+
+.Contato button span {
+    color: #2196f3;
+}
+
+@keyframes spinButton {
+    80% {
+        border: 2px solid transparent;
+        border-left: 2px solid var(--gradient-2);
+    }
+
+    100% {
+        transform: rotate(1080deg);
+        -webkit-transform: rotate(1080deg);
+        -moz-transform: rotate(1080deg);
+        -ms-transform: rotate(1080deg);
+        -o-transform: rotate(1080deg);
+        border: 2px solid var(--gradient-2);
+    }
+}
+
+@keyframes check {
+    to {
+        color: var(--gradient-2);
+    }
+}
+
+@keyframes circle {
+    to {
+        border: 2px solid var(--gradient-2);
+    }
+}
+
 /* ----------------------------- Sobre Mim --------------------------- */
 
 .SobreMim h1 {
@@ -169,4 +210,10 @@ body.dark {
 
 .Projetos h1 {
     background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+/* -------------------------------- Scroll Bar ------------------------ */
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #c90d0d, #c5b82b, #3ec83c, #007bff, #224ce0, #ab2e5a, #d01f61, #e02929);
 }

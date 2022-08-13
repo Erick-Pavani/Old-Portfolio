@@ -1,7 +1,9 @@
 if (window.innerWidth <= 500 ) {
     var nav = document.querySelector(".mobileMenu"),
-        navList = nav.querySelectorAll("li"),
-        totalNavList = navList.length;
+    navList = Array.prototype.slice.call(document.querySelectorAll(".name")),
+    lis = Array.prototype.slice.call(nav.querySelectorAll("li"));
+    navList.push.apply(navList, lis);
+    var totalNavList = navList.length;
 } else {
     var nav = document.querySelector(".nav"),
         navList = nav.querySelectorAll("li"),
@@ -57,14 +59,17 @@ function updateNav(element) {
     }
 }
 
-const logo = document.querySelector(".logo");
+const logo = document.querySelector(".name_picture");
 logo.addEventListener("click", () => {
     const newnav = document.querySelector(".mobileMenu"),
-    newnavList = newnav.querySelectorAll("li"),
-    newtotalNavList = newnavList.length,
+    newnavList = Array.prototype.slice.call(document.querySelectorAll(".name")),
+    newlis = Array.prototype.slice.call(newnav.querySelectorAll("li"));
+    newnavList.push.apply(newnavList, newlis);
+    const newtotalNavList = newnavList.length,
     newallSections = document.querySelectorAll(".section"),
     newtotalSections = newallSections.length;
     const homepage = document.querySelector(".HomePage");
+
     for (let i = 0; i < newtotalSections; i++) {
         newallSections[i].classList.remove("back-section");
     }
@@ -74,28 +79,8 @@ logo.addEventListener("click", () => {
         }
         newnavList[j].querySelector("a").classList.remove("active");    
     }
-    homepage.classList.add("active")
+    document.querySelector(".name").querySelector("a").classList.add("active")
     showSection(homepage);
 });
 
-const name = document.querySelector(".name");
-name.addEventListener("click", () => {
-    const newnav = document.querySelector(".mobileMenu"),
-    newnavList = newnav.querySelectorAll("li"),
-    newtotalNavList = newnavList.length,
-    newallSections = document.querySelectorAll(".section"),
-    newtotalSections = newallSections.length;
-    const homepage = document.querySelector(".HomePage");
-    for (let i = 0; i < newtotalSections; i++) {
-        newallSections[i].classList.remove("back-section");
-    }
-    for (let j = 0; j < newtotalNavList; j++) {
-        if (newnavList[j].querySelector("a").classList.contains("active")) {
-            addBackSection(j);    
-        }
-        newnavList[j].querySelector("a").classList.remove("active");    
-    }
-    homepage.classList.add("active")
-    showSection(homepage);
-});
 

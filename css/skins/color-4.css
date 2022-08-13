@@ -156,6 +156,46 @@
     background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2), var(--gradient-1));
 }
 
+.Contato button {
+    border: 3px solid var(--gradient-1);
+}
+
+.Contato button:focus {
+    border-left: 2px solid var(--gradient-1);
+    border: 2px solid var(--gradient-1);
+}
+
+.Contato button span {
+    color: var(--gradient-1);
+}
+
+@keyframes spinButton {
+    80% {
+        border: 2px solid transparent;
+        border-left: 2px solid var(--gradient-2);
+    }
+
+    100% {
+        transform: rotate(1080deg);
+        -webkit-transform: rotate(1080deg);
+        -moz-transform: rotate(1080deg);
+        -ms-transform: rotate(1080deg);
+        -o-transform: rotate(1080deg);
+        border: 2px solid var(--gradient-2);
+    }
+}
+
+@keyframes check {
+    to {
+        color: var(--gradient-2);
+    }
+}
+
+@keyframes circle {
+    to {
+        border: 2px solid var(--gradient-2);
+    }
+}
 
 /* ----------------------------- Sobre Mim --------------------------- */
 
@@ -168,3 +208,11 @@
 .Projetos h1 {
     background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
 }
+
+/* ------------------------------- Scroll Bar ---------------------- */
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, var(--gradient-1), var(--gradient-2));
+}
+
+

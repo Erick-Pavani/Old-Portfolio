@@ -837,6 +837,7 @@ body.dark .Tecnologias .progress-item {
     margin-top: 9vh;
     background: var(--primary-color);
     padding-top: 25px;
+    overflow-y: hidden !important;
 }
 
 .Contato h1 {
@@ -857,7 +858,7 @@ body.dark .Tecnologias .progress-item {
 }
 
 .Contato form {
-    margin-top: 50px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -968,15 +969,11 @@ body.dark .Contato .textareaBox span {
 }
 
 .Contato .inputBox.Nome i::before,
-.Contato .inputBox.Email i::before {
-    animation: contatoNormal 2s linear infinite;
-    -webkit-animation: contatoNormal 2s linear infinite;
-}
-
+.Contato .inputBox.Email i::before,
 .Contato .inputBox.Assunto i::before,
 .Contato .textareaBox.Mensagem i::before {
-    animation: contatoMaior 2s linear infinite;
-    -webkit-animation: contatoMaior 2s linear infinite;
+    animation: contato 2s linear infinite;
+    -webkit-animation: contato 2s linear infinite;
 }
 
 .Contato .inputBox input:valid ~ i::before,
@@ -986,17 +983,59 @@ body.dark .Contato .textareaBox span {
     left: 0;
 }
 
-@keyframes contatoNormal {
-    0% {
-        background-position-x: 0;
-    } 
-    
-    100% {
-        background-position-x: 350px;
-    }
+.Contato button {
+    margin-bottom: 40px;
+    width: 200px;
+    height: 50px;
+    background: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
 }
 
-@keyframes contatoMaior {
+.Contato button i {
+    color: transparent;
+    font-size: 25px;
+}
+
+.Contato button:hover {
+    scale: 1.25;
+}
+
+.Contato button:focus {
+    outline: none;
+    width: 50px;
+    animation: spinButton 2s 500ms forwards;
+    -webkit-animation: spinButton 2s 500ms forwards;
+}
+
+.Contato button span {
+    position: absolute;
+    fill: transparent;
+    font-size: 20px;
+}
+
+.Contato button:focus span {
+    color: transparent;
+}
+
+.Contato button:focus i {
+    animation: check 500ms 2300ms forwards;
+    -webkit-animation: check 500ms 2300ms forwards;
+}
+
+@keyframes contato {
     0% {
         background-position-x: 0;
     } 
@@ -1177,85 +1216,20 @@ body.dark .Contato .textareaBox span {
 
 /* ------------------------------------------ Testing ------------------------------- */
 
-.Contato button {
-    margin-bottom: 40px;
-    width: 200px;
-    height: 50px;
-    background: none;
-    border: 3px solid #f2c623;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 500ms;
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    -ms-transition: 500ms;
-    -o-transition: 500ms;
+
+
+/* -------------------------------- Scroll Bar ------------------------------------ */
+
+::-webkit-scrollbar {
+    background: var(--primary-color);
+    width: 8px !important;
 }
 
-.Contato button i {
-    color: transparent;
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }
 
-.Contato button:hover {
-    font-size: 14px;
-}
-
-.Contato button:focus {
-    outline: none;
-    width: 50px;
-    border-left: 2px solid #f2c623;
-    border: 2px solid #f2c623;
-    animation: spinButton 2s 500ms forwards;
-    -webkit-animation: spinButton 2s 500ms forwards;
-}
-
-.Contato button span {
-    position: absolute;
-    color: #f2c623;
-    fill: transparent;
-    font-size: 20px;
-}
-
-.Contato button:focus span {
-    color: transparent;
-}
-
-.Contato button:focus i {
-    animation: check 500ms 2300ms forwards;
-    -webkit-animation: check 500ms 2300ms forwards;
-}
-
-@keyframes spinButton {
-    80% {
-        border: 2px solid transparent;
-        border-left: 2px solid #f2c623;
-    }
-
-    100% {
-        transform: rotate(1080deg);
-        -webkit-transform: rotate(1080deg);
-        -moz-transform: rotate(1080deg);
-        -ms-transform: rotate(1080deg);
-        -o-transform: rotate(1080deg);
-        border: 2px solid #f2c623;
-    }
-}
-
-@keyframes check {
-    to {
-        color: #f2c623;
-    }
-}
-
-@keyframes circle {
-    to {
-        border: 2px solid #f2c623;
-    }
-}
