@@ -1212,8 +1212,8 @@ body.dark .Contato .textareaBox span {
     width: 50px;
     border-left: 2px solid #f2c623;
     border: 2px solid #f2c623;
-    animation: spin 2s 500ms forwards;
-    -webkit-animation: spin 2s 500ms forwards;
+    animation: spinButton 2s 500ms forwards;
+    -webkit-animation: spinButton 2s 500ms forwards;
 }
 
 .Contato button span {
@@ -1232,7 +1232,7 @@ body.dark .Contato .textareaBox span {
     -webkit-animation: check 500ms 2300ms forwards;
 }
 
-@keyframes spin {
+@keyframes spinButton {
     80% {
         border: 2px solid transparent;
         border-left: 2px solid #f2c623;
