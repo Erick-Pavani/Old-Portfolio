@@ -335,7 +335,7 @@ header nav .mobile {
 
 .HomePage {
     background: var(--primary-color);
-    margin-top: 10vh;
+    margin-top: 9vh;
 }
 
 .HomePage canvas {
@@ -533,8 +533,8 @@ header nav .mobile {
 /* ------------------------------------ Tecnologias ---------------------- */
 
 .Tecnologias {
-    margin-top: 10vh;
-    padding-top: 15px;
+    margin-top: 9vh;
+    padding-top: 35px;
     background: var(--primary-color);
 }
 
@@ -812,7 +812,11 @@ header nav .mobile {
     flex: 0 0 1.5rem;
     min-width: 1.5rem;
     height: .5rem;
-    background-color: var(--secondary-color);
+    background-color: rgba(35, 34, 34, 0.669);;
+}
+
+body.dark .Tecnologias .progress-item {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .progress-bar {
@@ -829,11 +833,10 @@ header nav .mobile {
 .Contato {
     display: flex !important;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 9vh;
     background: var(--primary-color);
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .Contato h1 {
@@ -841,6 +844,7 @@ header nav .mobile {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 50px;
 }
 
 .Contato h3 {
@@ -848,21 +852,43 @@ header nav .mobile {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    margin-top: -10px;
 }
 
 .Contato form {
-    margin-top: 85px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
+}
+
+.Contato .contatoLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.Contato .contatoLayout .contatoInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .Contato .inputBox,
 .Contato .textareaBox {
     position: relative;
-    width: 250px;
+}
+
+.Contato .inputBox.Nome, 
+.Contato .inputBox.Email,
+.Contato .inputBox.Assunto, 
+.Contato .textareaBox.Mensagem {
+    width: 500px;
 }
 
 .Contato .textareaBox textarea {
@@ -892,11 +918,15 @@ header nav .mobile {
     position: absolute;
     left: 0;
     padding: 10px 0 5px;
-    /* color: rgba(255, 255, 255, 0.5); */
-    color: var(--secondary-color);
+    color: rgba(35, 34, 34, 0.669);
     text-transform: uppercase;
     pointer-events: none;
     letter-spacing: 0.1em;
+}
+
+body.dark .Contato .inputBox span,
+body.dark .Contato .textareaBox span {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .Contato .inputBox input:valid ~ span,
@@ -904,12 +934,12 @@ header nav .mobile {
 .Contato .textareaBox textarea:valid ~ span,
 .Contato .textareaBox textarea:focus ~ span {
     color: #2196f3;
-    transform: translateY(-16px);
-    -webkit-transform: translateY(-16px);
-    -moz-transform: translateY(-16px);
-    -ms-transform: translateY(-16px);
-    -o-transform: translateY(-16px);
-    font-size: 0.65em;
+    transform: translateY(-19px);
+    -webkit-transform: translateY(-19px);
+    -moz-transform: translateY(-19px);
+    -ms-transform: translateY(-19px);
+    -o-transform: translateY(-19px);
+    font-size: 0.9em;
 }
 
 .Contato .inputBox i, 
@@ -930,14 +960,23 @@ header nav .mobile {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #ff1b69, #ff0, #2196f3, #9c27b0, #ff1b69);
-    animation: contato 2s linear infinite;
-    -webkit-animation: contato 2s linear infinite;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
+}
+
+.Contato .inputBox.Nome i::before,
+.Contato .inputBox.Email i::before {
+    animation: contatoNormal 2s linear infinite;
+    -webkit-animation: contatoNormal 2s linear infinite;
+}
+
+.Contato .inputBox.Assunto i::before,
+.Contato .textareaBox.Mensagem i::before {
+    animation: contatoMaior 2s linear infinite;
+    -webkit-animation: contatoMaior 2s linear infinite;
 }
 
 .Contato .inputBox input:valid ~ i::before,
@@ -947,13 +986,154 @@ header nav .mobile {
     left: 0;
 }
 
-@keyframes contato {
+@keyframes contatoNormal {
     0% {
         background-position-x: 0;
     } 
     
     100% {
-        background-position-x: 250px;
+        background-position-x: 350px;
+    }
+}
+
+@keyframes contatoMaior {
+    0% {
+        background-position-x: 0;
+    } 
+    
+    100% {
+        background-position-x: 500px;
+    }
+}
+
+@media (max-width: 850px) {
+    .Contato h1 {
+        font-size: 50px;
+    }
+
+    .Contato h3 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .Contato .inputBox.Nome, 
+    .Contato .inputBox.Email {
+        width: 500px;
+    }
+    
+    @keyframes contatoNormal {
+        0% {
+            background-position-x: 0;
+        } 
+        
+        100% {
+            background-position-x: 500px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .Contato .inputBox.Nome, 
+    .Contato .inputBox.Email,
+    .Contato .inputBox.Assunto,
+    .Contato .textareaBox.Mensagem {
+        width: 400px;
+    }
+
+    @keyframes contatoNormal {
+        0% {
+            background-position-x: 0;
+        } 
+        
+        100% {
+            background-position-x: 400px;
+        }
+    }
+
+    @keyframes contatoMaior {
+        0% {
+            background-position-x: 0;
+        } 
+        
+        100% {
+            background-position-x: 400px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .Contato h1 {
+        font-size: 40px;
+    }
+
+    .Contato h3 {
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .Contato .inputBox.Nome, 
+    .Contato .inputBox.Email,
+    .Contato .inputBox.Assunto,
+    .Contato .textareaBox.Mensagem {
+        width: 300px;
+    }
+
+    @keyframes contatoNormal {
+        0% {
+            background-position-x: 0;
+        } 
+        
+        100% {
+            background-position-x: 300px;
+        }
+    }
+
+    @keyframes contatoMaior {
+        0% {
+            background-position-x: 0;
+        } 
+        
+        100% {
+            background-position-x: 300px;
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    .Contato h1 {
+        font-size: 33px;
+    }
+
+    .Contato h3 {
+        font-size: 13px;
+        margin-top: 0;
+    }
+
+    .Contato .inputBox.Nome, 
+    .Contato .inputBox.Email,
+    .Contato .inputBox.Assunto,
+    .Contato .textareaBox.Mensagem {
+        width: 250px;
+    }
+
+    @keyframes contatoNormal {
+        0% {
+            background-position-x: 0;
+        } 
+        
+        100% {
+            background-position-x: 250px;
+        }
+    }
+
+    @keyframes contatoMaior {
+        0% {
+            background-position-x: 0;
+        } 
+        
+        100% {
+            background-position-x: 250px;
+        }
     }
 }
 
@@ -964,7 +1144,7 @@ header nav .mobile {
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 9vh;
     padding-top: 15px;
 }
 
@@ -973,6 +1153,7 @@ header nav .mobile {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 65px;
 }
 
 /* ----------------------------------------- Projetos --------------------------------- */
@@ -982,7 +1163,7 @@ header nav .mobile {
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 9vh;
     padding-top: 15px;
 }
 
@@ -991,4 +1172,90 @@ header nav .mobile {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 65px;
+}
+
+/* ------------------------------------------ Testing ------------------------------- */
+
+.Contato button {
+    margin-bottom: 40px;
+    width: 200px;
+    height: 50px;
+    background: none;
+    border: 3px solid #f2c623;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.Contato button i {
+    color: transparent;
+}
+
+.Contato button:hover {
+    font-size: 14px;
+}
+
+.Contato button:focus {
+    outline: none;
+    width: 50px;
+    border-left: 2px solid #f2c623;
+    border: 2px solid #f2c623;
+    animation: spin 2s 500ms forwards;
+    -webkit-animation: spin 2s 500ms forwards;
+}
+
+.Contato button span {
+    position: absolute;
+    color: #f2c623;
+    fill: transparent;
+    font-size: 20px;
+}
+
+.Contato button:focus span {
+    color: transparent;
+}
+
+.Contato button:focus i {
+    animation: check 500ms 2300ms forwards;
+    -webkit-animation: check 500ms 2300ms forwards;
+}
+
+@keyframes spin {
+    80% {
+        border: 2px solid transparent;
+        border-left: 2px solid #f2c623;
+    }
+
+    100% {
+        transform: rotate(1080deg);
+        -webkit-transform: rotate(1080deg);
+        -moz-transform: rotate(1080deg);
+        -ms-transform: rotate(1080deg);
+        -o-transform: rotate(1080deg);
+        border: 2px solid #f2c623;
+    }
+}
+
+@keyframes check {
+    to {
+        color: #f2c623;
+    }
+}
+
+@keyframes circle {
+    to {
+        border: 2px solid #f2c623;
+    }
 }

@@ -101,7 +101,7 @@ body.dark {
 }
 
 .rounded_desktop .rounded {
-    border: 1px solid var(--gradient-top-1);
+    border: 1px solid var(--gradient-1);
 }
 
 .name_picture .rounded_mobile {
@@ -152,6 +152,11 @@ body.dark {
 
 .Contato h3 {
     background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
+}
+
+.Contato .inputBox i::before,
+.Contato .textareaBox i::before {
+    background: linear-gradient(90deg, #ff1b69, #ff0, #2196f3, #9c27b0, #ff1b69);
 }
 
 /* ----------------------------- Sobre Mim --------------------------- */

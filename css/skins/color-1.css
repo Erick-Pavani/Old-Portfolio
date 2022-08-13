@@ -151,6 +151,12 @@
     background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
 }
 
+.Contato .inputBox i::before,
+.Contato .textareaBox i::before {
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2), var(--gradient-1));
+}
+
+
 /* ----------------------------- Sobre Mim --------------------------- */
 
 .SobreMim h1 {
