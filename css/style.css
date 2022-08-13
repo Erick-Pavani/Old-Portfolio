@@ -1222,7 +1222,7 @@ body.dark .Contato .textareaBox span {
 
 ::-webkit-scrollbar {
     background: var(--primary-color);
-    width: 8px !important;
+    width: 5px !important;
 }
 
 ::-webkit-scrollbar-thumb {
