@@ -36,6 +36,8 @@
     <script src="./js/page-switcher.js" async></script>
     <script src="./js/script.js" defer></script>
     <script src="./js/style-switcher.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('apZ6Y2NY15ZZIpmnF')</script>
 
 </head>
 <body class="dark">
@@ -288,38 +290,36 @@
         <div class="Contato section" id="Contato">
             <h1>Contrate-me!</h1>
             <h3>Digo... Contate-me!</h3>
-            <form action="GET">
-                <div class="contatoLayout">
-                    <div class="contatoInputs">
-                        <div class="inputBox Nome">
-                            <input type="text" maxlength="35" required>
-                            <span>Nome</span>
-                            <i></i>
-                        </div>
-                        <div class="inputBox Email">
-                            <input type="email" maxlength="30" required>
-                            <span>Email</span>
-                            <i></i>
-                        </div>
-                        <div class="inputBox Assunto">
-                            <input type="text" maxlength="45" required>
-                            <span>Assunto</span>
-                            <i></i>
-                        </div>
+            <div class="contatoLayout">
+                <div class="contatoInputs">
+                    <div class="inputBox Nome">
+                        <input type="text" id="mailName" maxlength="35" required>
+                        <span>Nome</span>
+                        <i></i>
                     </div>
-                    <div class="contatoTextarea">
-                        <div class="textareaBox Mensagem">
-                            <textarea name="" id="" cols="10" rows="5" maxlength="205" required></textarea>
-                            <span>Mensagem</span>
-                            <i></i>
-                        </div>
+                    <div class="inputBox Email">
+                        <input type="email" id="mailEmail" maxlength="30" required>
+                        <span>Email</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox Assunto">
+                        <input type="text" id="mailSubject" maxlength="45" required>
+                        <span>Assunto</span>
+                        <i></i>
                     </div>
                 </div>
-                <button>
-                    <span>Enviar</span>
-                    <i class="fa-solid fa-check"></i>
-                </button>
-            </form>
+                <div class="contatoTextarea">
+                    <div class="textareaBox Mensagem">
+                        <textarea name="textareaEmail" id="mailMessage" cols="10" rows="5" maxlength="205" required></textarea>
+                        <span>Mensagem</span>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="mailSubmit" onclick="SendMail()">
+                <span>Enviar</span>
+                <i class="fa-solid fa-check"></i>
+            </button>
         </div>
         <!-- Contato End-->
     </main>
@@ -341,12 +341,10 @@
     </div>
 
     <!-------------------------------- Javascript -------------------------------------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="./js/matrix-rain.js"></script>
     <script src="./js/tecnologias-slider.js"></script>
     <script src="./js/EmailButton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
 
