@@ -1010,9 +1010,9 @@ body.dark .Contato .textareaBox span {
     font-size: 25px;
 }
 
-.Contato button:hover {
+/* .Contato button:hover {
     scale: 1.25;
-}
+} */
 
 .Contato button.valid:focus {
     outline: none;
