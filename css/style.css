@@ -1032,13 +1032,13 @@ body.dark .Contato .textareaBox span {
     will-change: transform;
 }
 
-.Contato button.valid:focus span 
+.Contato button.valid:focus span,
 .Contato button.valid:active span {
     color: transparent;
     will-change: transform;
 }
 
-.Contato button.valid:focus i
+.Contato button.valid:focus i,
 .Contato button.valid:active i {
     animation: check 500ms 2300ms forwards;
     -webkit-animation: check 500ms 2300ms forwards;
