@@ -1003,13 +1003,11 @@ body.dark .Contato .textareaBox span {
     -moz-transition: 500ms;
     -ms-transition: 500ms;
     -o-transition: 500ms;
-    will-change: transform;
 }
 
 .Contato button i {
     color: transparent;
     font-size: 25px;
-    will-change: transform;
 }
 
 .Contato button:hover {
@@ -1022,27 +1020,23 @@ body.dark .Contato .textareaBox span {
     width: 50px;
     animation: spinButton 2s 500ms forwards;
     -webkit-animation: spinButton 2s 500ms forwards;
-    will-change: transform;
 }
 
 .Contato button span {
     position: absolute;
     fill: transparent;
     font-size: 20px;
-    will-change: transform;
 }
 
 .Contato button.valid:focus span,
 .Contato button.valid:active span {
     color: transparent;
-    will-change: transform;
 }
 
 .Contato button.valid:focus i,
 .Contato button.valid:active i {
     animation: check 500ms 2300ms forwards;
     -webkit-animation: check 500ms 2300ms forwards;
-    will-change: transform;
 }
 
 @keyframes contato {

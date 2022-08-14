@@ -13,7 +13,6 @@ function SendMail() {
             document.getElementById("mailName").value = "";
             document.getElementById("mailEmail").value = "";
             document.getElementById("mailMessage").value = "";
-            params = "";
             setTimeout(function () {
                 document.getElementById("mailSubmit").classList.remove("valid");
             }, 5000)
