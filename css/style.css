@@ -1046,35 +1046,6 @@ body.dark .Contato .textareaBox span {
     }
 }
 
-@keyframes spinButton {
-    80% {
-        border: 2px solid transparent;
-        border-left: 2px solid var(--gradient-2);
-    }
-
-    100% {
-        transform: rotate(1080deg);
-        -webkit-transform: rotate(1080deg);
-        -moz-transform: rotate(1080deg);
-        -ms-transform: rotate(1080deg);
-        -o-transform: rotate(1080deg);
-        border: 2px solid var(--gradient-2);
-    }
-}
-
-@keyframes check {
-    to {
-        color: var(--gradient-2);
-    }
-}
-
-@keyframes circle {
-    to {
-        border: 2px solid var(--gradient-2);
-    }
-}
-
-
 @media (max-width: 850px) {
     .Contato h1 {
         font-size: 50px;

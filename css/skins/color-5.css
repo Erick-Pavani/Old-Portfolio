@@ -172,7 +172,7 @@ body.dark {
     color: #2196f3;
 }
 
-/* @keyframes spinButton {
+@keyframes spinButton {
     80% {
         border: 2px solid transparent;
         border-left: 2px solid var(--gradient-2);
@@ -189,16 +189,16 @@ body.dark {
 }
 
 @keyframes check {
-    to {
+    100% {
         color: var(--gradient-2);
     }
 }
 
 @keyframes circle {
-    to {
+    100% {
         border: 2px solid var(--gradient-2);
     }
-} */
+}
 
 /* ----------------------------- Sobre Mim --------------------------- */
 
