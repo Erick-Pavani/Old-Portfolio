@@ -8,13 +8,16 @@ function SendMail() {
         }
 
         emailjs.send("service_mrdgala","template_5a1i30m", params).then(function (res) {
+            document.getElementById("mailSubmit").classList.add("valid");
             document.getElementById("mailSubject").value = "";
             document.getElementById("mailName").value = "";
             document.getElementById("mailEmail").value = "";
             document.getElementById("mailMessage").value = "";
+            params = "";
+            setTimeout(function () {
+                document.getElementById("mailSubmit").classList.remove("valid");
+            }, 5000)
         });
-
-        params = "";
     } else {
         alert("Preencha todos os campos para enviar o email!");
     }
