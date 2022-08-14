@@ -1014,8 +1014,7 @@ body.dark .Contato .textareaBox span {
     scale: 1.25;
 }
 
-.Contato button.valid:focus,
-.Contato button.valid:active {
+.Contato button.valid:focus {
     outline: none;
     width: 50px;
     animation: spinButton 2s 500ms forwards;
@@ -1028,13 +1027,11 @@ body.dark .Contato .textareaBox span {
     font-size: 20px;
 }
 
-.Contato button.valid:focus span,
-.Contato button.valid:active span {
+.Contato button.valid:focus span {
     color: transparent;
 }
 
-.Contato button.valid:focus i,
-.Contato button.valid:active i {
+.Contato button.valid:focus i {
     animation: check 500ms 2300ms forwards;
     -webkit-animation: check 500ms 2300ms forwards;
 }
