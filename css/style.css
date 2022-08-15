@@ -982,6 +982,10 @@ body.dark .Contato .textareaBox span {
     left: 0;
 }
 
+.Contato button * {
+    -webkit-appearance: none;
+}
+
 .Contato button {
     margin-bottom: 40px;
     margin-top: 35px;
