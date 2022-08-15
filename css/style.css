@@ -1017,7 +1017,7 @@ body.dark .Contato .textareaBox span {
     outline: none;
     width: 50px;
     animation: spinButton 2s 500ms forwards;
-    -webkit-animation: spinButton 2s 500ms forwards;
+    -webkit-animation: spinButton 4s 1000ms forwards;
 }
 
 .Contato button span {
