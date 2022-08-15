@@ -1073,7 +1073,7 @@ body.dark .Contato .textareaBox span {
         border-left: 2px solid var(--gradient-2);
     }
 
-    99% {
+    100% {
         transform: rotate(1080deg);
         -webkit-transform: rotate(1080deg);
         -moz-transform: rotate(1080deg);
@@ -1084,7 +1084,7 @@ body.dark .Contato .textareaBox span {
 }
 
 @-webkit-keyframes check {
-    100% {
+    to {
         color: var(--gradient-2);
     }
 }
