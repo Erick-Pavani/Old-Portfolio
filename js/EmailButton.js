@@ -21,3 +21,10 @@ function SendMail() {
         alert("Preencha todos os campos para enviar o email!");
     }
 }
+
+function mailInput(element) {
+    if (! element.checkValidity()) {
+        alert("Insira um email válido!");
+        document.getElementById("mailEmail").value = "";
+    }
+}
