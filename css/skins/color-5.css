@@ -213,7 +213,7 @@ body.dark {
         -webkit-perspective: 1000;
         -webkit-backface-visibility: hidden;
         border: 2px solid transparent;
-        border-left: 2px solid green;
+        border-left: 2px solid var(--gradient-2);
     }
 
     100% {
@@ -224,7 +224,7 @@ body.dark {
         -moz-transform: rotate(1080deg);
         -ms-transform: rotate(1080deg);
         -o-transform: rotate(1080deg);
-        border: 2px solid green;
+        border: 2px solid var(--gradient-2);
     }
 }
 
@@ -232,7 +232,7 @@ body.dark {
     100% {
         -webkit-perspective: 1000;
         -webkit-backface-visibility: hidden;
-        color: green;
+        color: var(--gradient-2);
     }
 }
 
@@ -240,7 +240,7 @@ body.dark {
     100% {
         -webkit-perspective: 1000;
         -webkit-backface-visibility: hidden;
-        border: 2px solid green;
+        border: 2px solid var(--gradient-2);
     }
 }
 
