@@ -999,7 +999,7 @@ body.dark .Contato .textareaBox span {
     justify-content: center;
     align-items: center;
     transition: 500ms;
-    -webkit-transition: 500ms;
+    -webkit-transition: 1000ms;
     -moz-transition: 500ms;
     -ms-transition: 500ms;
     -o-transition: 500ms;
@@ -1021,8 +1021,8 @@ body.dark .Contato .textareaBox span {
     outline: none;
     width: 50px;
     animation: spinButton 2s 500ms forwards;
-    -webkit-animation: spinButton 2s 500ms forwards;
-    -webkit-animation-delay: 0.5s;
+    -webkit-animation: spinButton 5s 500ms forwards;
+    -webkit-animation-delay: 0.1s;
     will-change: transform;
 }
 
@@ -1035,13 +1035,13 @@ body.dark .Contato .textareaBox span {
 
 .Contato button.valid:focus span {
     color: transparent;
-    will-change: transform;
+    will-change: transform; 
 }
 
 .Contato button.valid:focus i {
     animation: check 500ms 2300ms forwards;
     -webkit-animation: check 500ms 2300ms forwards;
-    -webkit-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.1s;
     will-change: transform;
 }
 
