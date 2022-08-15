@@ -201,14 +201,14 @@ body.dark {
 }
 
 @-webkit-keyframes spinButton {
-    80% {
+    0% {
         border: 2px solid transparent;
         border-left: 2px solid var(--gradient-2);
     }
 
     100% {
         transform: rotate(1080deg);
-        -webkit-transform: -webkit-rotate(1080deg);
+        -webkit-transform: rotate(1080deg);
         -moz-transform: rotate(1080deg);
         -ms-transform: rotate(1080deg);
         -o-transform: rotate(1080deg);
@@ -217,13 +217,13 @@ body.dark {
 }
 
 @-webkit-keyframes check {
-    100% {
+    to {
         color: var(--gradient-2);
     }
 }
 
 @-webkit-keyframes circle {
-    100% {
+    to {
         border: 2px solid var(--gradient-2);
     }
 }
