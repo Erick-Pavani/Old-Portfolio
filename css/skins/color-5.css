@@ -199,16 +199,16 @@ body.dark {
         border: 2px solid transparent;
         border-left: 2px solid var(--gradient-2);
         border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
         transform: rotate(270deg);
         -webkit-transform: rotate(270deg);
         -moz-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
         -o-transform: rotate(270deg);
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-}
+    }
 
     25% {
         transform: rotate(270deg);
@@ -216,6 +216,13 @@ body.dark {
         -moz-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
         -o-transform: rotate(270deg);
+        border: 2px solid transparent;
+        border-left: 2px solid var(--gradient-2);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
     }
 
     50% {
@@ -224,6 +231,13 @@ body.dark {
         -moz-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
         -o-transform: rotate(270deg);
+        border: 2px solid transparent;
+        border-left: 2px solid var(--gradient-2);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
     }
 
     75% {
@@ -232,14 +246,16 @@ body.dark {
         -moz-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
         -o-transform: rotate(270deg);
+        border: 2px solid transparent;
+        border-left: 2px solid var(--gradient-2);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
     }
 
     100% {
-        transform: rotate(270deg);
-        -webkit-transform: rotate(1080deg);
-        -moz-transform: rotate(1080deg);
-        -ms-transform: rotate(1080deg);
-        -o-transform: rotate(1080deg);
         border: 2px solid var(--gradient-2);
     }
 }
