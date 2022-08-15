@@ -212,8 +212,8 @@ body.dark {
     80% {
         -webkit-perspective: 1000;
         -webkit-backface-visibility: hidden;
-        border: 2px solid transparent;
-        border-left: 2px solid var(--gradient-2);
+        border: 2px solid transparent !important;
+        border-left: 2px solid var(--gradient-2) !important;
     }
 
     100% {

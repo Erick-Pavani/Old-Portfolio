@@ -1003,15 +1003,18 @@ body.dark .Contato .textareaBox span {
     -moz-transition: 500ms;
     -ms-transition: 500ms;
     -o-transition: 500ms;
+    will-change: transform;
 }
 
 .Contato button i {
     color: transparent;
     font-size: 25px;
+    will-change: transform;
 }
 
 .Contato button:hover {
     scale: 1.25;
+    will-change: transform;
 }
 
 .Contato button.valid:focus {
@@ -1019,33 +1022,27 @@ body.dark .Contato .textareaBox span {
     width: 50px;
     animation: spinButton 2s 500ms forwards;
     -webkit-animation: spinButton 2s 500ms forwards;
-    perspective: 1000;
-    -webkit-perspective: 1000;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    -webkit-animation-delay: 0.5s;
+    will-change: transform;
 }
 
 .Contato button span {
     position: absolute;
     fill: transparent;
     font-size: 20px;
+    will-change: transform;
 }
 
 .Contato button.valid:focus span {
     color: transparent;
-    perspective: 1000;
-    -webkit-perspective: 1000;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    will-change: transform;
 }
 
 .Contato button.valid:focus i {
     animation: check 500ms 2300ms forwards;
     -webkit-animation: check 500ms 2300ms forwards;
-    perspective: 1000;
-    -webkit-perspective: 1000;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    -webkit-animation-delay: 0.5s;
+    will-change: transform;
 }
 
 @keyframes contato {
