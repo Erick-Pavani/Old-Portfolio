@@ -1017,7 +1017,7 @@ body.dark .Contato .textareaBox span {
     outline: none;
     width: 50px;
     animation: spinButton 2s 500ms forwards;
-    -webkit-animation: spinButton 2s 250ms forwards;
+    -webkit-animation: spinButton 2s 500ms forwards;
 }
 
 .Contato button span {
@@ -1042,6 +1042,50 @@ body.dark .Contato .textareaBox span {
     
     100% {
         background-position-x: 500px;
+    }
+}
+
+@keyframes spinButton {
+    80% {
+        border: 2px solid transparent;
+        border-left: 2px solid var(--gradient-2);
+    }
+
+    100% {
+        transform: rotate(1080deg);
+        -webkit-transform: rotate(1080deg);
+        -moz-transform: rotate(1080deg);
+        -ms-transform: rotate(1080deg);
+        -o-transform: rotate(1080deg);
+        border: 2px solid var(--gradient-2);
+    }
+}
+
+@keyframes check {
+    100% {
+        color: var(--gradient-2);
+    }
+}
+
+@-webkit-keyframes spinButton {
+    0% {
+        border: 2px solid transparent;
+        border-left: 2px solid var(--gradient-2);
+    }
+
+    100% {
+        transform: rotate(1080deg);
+        -webkit-transform: rotate(1080deg);
+        -moz-transform: rotate(1080deg);
+        -ms-transform: rotate(1080deg);
+        -o-transform: rotate(1080deg);
+        border: 2px solid var(--gradient-2);
+    }
+}
+
+@-webkit-keyframes check {
+    to {
+        color: var(--gradient-2);
     }
 }
 
