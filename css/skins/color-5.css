@@ -176,51 +176,39 @@ body.dark {
     80% {
         border: 2px solid transparent;
         border-left: 2px solid var(--gradient-2);
-        -webkit-perspective: 1000;
-        -webkit-backface-visibility: hidden;
     }
 
     100% {
-        -webkit-perspective: 1000;
-        -webkit-backface-visibility: hidden;
         transform: rotate(1080deg);
         -webkit-transform: rotate(1080deg);
         -moz-transform: rotate(1080deg);
         -ms-transform: rotate(1080deg);
         -o-transform: rotate(1080deg);
         border: 2px solid var(--gradient-2);
-    }
+}
 }
 
 @keyframes check {
     100% {
-        -webkit-perspective: 1000;
-        -webkit-backface-visibility: hidden;
         color: var(--gradient-2);
     }
 }
 
 @keyframes circle {
     100% {
-        -webkit-perspective: 1000;
-        -webkit-backface-visibility: hidden;
         border: 2px solid var(--gradient-2);
     }
 }
 
 @-webkit-keyframes spinButton {
     80% {
-        -webkit-perspective: 1000;
-        -webkit-backface-visibility: hidden;
         border: 2px solid transparent;
         border-left: 2px solid var(--gradient-2);
     }
 
     100% {
-        -webkit-perspective: 1000;
-        -webkit-backface-visibility: hidden;
         transform: rotate(1080deg);
-        -webkit-transform: rotate(1080deg);
+        -webkit-transform: -webkit-rotate(1080deg);
         -moz-transform: rotate(1080deg);
         -ms-transform: rotate(1080deg);
         -o-transform: rotate(1080deg);
@@ -230,16 +218,12 @@ body.dark {
 
 @-webkit-keyframes check {
     100% {
-        -webkit-perspective: 1000;
-        -webkit-backface-visibility: hidden;
         color: var(--gradient-2);
     }
 }
 
 @-webkit-keyframes circle {
     100% {
-        -webkit-perspective: 1000;
-        -webkit-backface-visibility: hidden;
         border: 2px solid var(--gradient-2);
     }
 }
