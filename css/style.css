@@ -1003,6 +1003,10 @@ body.dark .Contato .textareaBox span {
     -moz-transition: 500ms;
     -ms-transition: 500ms;
     -o-transition: 500ms;
+    perspective: 1000;
+    -webkit-perspective: 1000;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .Contato button i {
