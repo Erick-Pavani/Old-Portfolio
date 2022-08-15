@@ -47,7 +47,6 @@ main .section {
     z-index: 0;
     min-width: 100vw;
     overflow-x: hidden;
-    /* transition: opacity 1s ease-out; */
 }
 
 main .SobreMim.section,

@@ -194,20 +194,48 @@ body.dark {
     }
 }
 
-@keyframes circle {
-    100% {
-        border: 2px solid var(--gradient-2);
-    }
-}
-
 @-webkit-keyframes spinButton {
     0% {
         border: 2px solid transparent;
         border-left: 2px solid var(--gradient-2);
+        border-radius: 50%;
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+
+    25% {
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+    }
+
+    50% {
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
     }
 
     100% {
-        transform: rotate(1080deg);
+        transform: rotate(270deg);
         -webkit-transform: rotate(1080deg);
         -moz-transform: rotate(1080deg);
         -ms-transform: rotate(1080deg);
@@ -219,12 +247,6 @@ body.dark {
 @-webkit-keyframes check {
     to {
         color: var(--gradient-2);
-    }
-}
-
-@-webkit-keyframes circle {
-    to {
-        border: 2px solid var(--gradient-2);
     }
 }
 
