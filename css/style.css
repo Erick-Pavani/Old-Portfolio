@@ -1090,6 +1090,20 @@ body.dark .Contato .textareaBox span {
     }
 }
 
+@media (min-height: 750px) {
+    .Contato .contatoLayout {
+        margin-top: 70px;
+    }
+
+    .Contato .contatoInputs {
+        gap: 45px !important;
+    }
+
+    .Contato .textareaBox {
+        margin-top: 20px;
+    }
+}
+
 @media (min-width: 850px) {
     .Contato button:hover {
         scale: 1.25;
