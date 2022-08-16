@@ -6,9 +6,10 @@ function SendMail() {
             email_id : document.getElementById("mailEmail").value,
             message : document.getElementById("mailMessage").value
         }
-
+        
+        document.getElementById("mailSubmit").classList.add("valid");
+        
         emailjs.send("service_mrdgala","template_5a1i30m", params).then(function (res) {
-            document.getElementById("mailSubmit").classList.add("valid");
             document.getElementById("mailSubject").value = "";
             document.getElementById("mailName").value = "";
             document.getElementById("mailEmail").value = "";
