@@ -83,4 +83,12 @@ logo.addEventListener("click", () => {
     showSection(homepage);
 });
 
+document.querySelector(".contact-me").addEventListener("click", function () {
+    const sectionIndex = this.getAttribute("data-section-index");
+    showSection(this);
+    updateNav(this);
+    removeBackSection();
+    addBackSection(sectionIndex);
+});
+
 
