@@ -1360,7 +1360,7 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 5px;
 }
 
 .SobreMim .SobreMim-Content .descricao .p-glass {
