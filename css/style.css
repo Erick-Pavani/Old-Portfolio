@@ -1133,7 +1133,7 @@ body.dark .Contato .textareaBox span {
         width: 500px;
     }
     
-    @keyframes contatoNormal {
+    @keyframes contato {
         0% {
             background-position-x: 0;
         } 
@@ -1152,17 +1152,7 @@ body.dark .Contato .textareaBox span {
         width: 400px;
     }
 
-    @keyframes contatoNormal {
-        0% {
-            background-position-x: 0;
-        } 
-        
-        100% {
-            background-position-x: 400px;
-        }
-    }
-
-    @keyframes contatoMaior {
+    @keyframes contato {
         0% {
             background-position-x: 0;
         } 
@@ -1190,17 +1180,7 @@ body.dark .Contato .textareaBox span {
         width: 300px;
     }
 
-    @keyframes contatoNormal {
-        0% {
-            background-position-x: 0;
-        } 
-        
-        100% {
-            background-position-x: 300px;
-        }
-    }
-
-    @keyframes contatoMaior {
+    @keyframes contato {
         0% {
             background-position-x: 0;
         } 
@@ -1228,17 +1208,7 @@ body.dark .Contato .textareaBox span {
         width: 250px;
     }
 
-    @keyframes contatoNormal {
-        0% {
-            background-position-x: 0;
-        } 
-        
-        100% {
-            background-position-x: 250px;
-        }
-    }
-
-    @keyframes contatoMaior {
+    @keyframes contato {
         0% {
             background-position-x: 0;
         } 
