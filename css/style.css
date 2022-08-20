@@ -1291,6 +1291,7 @@ body.dark .Contato .textareaBox span {
     flex-direction: column;
     align-items: center;
     padding: 25px;
+    padding-bottom: 15px;
 }
 
 body .SobreMim .SobreMim-Content .descricao {
@@ -1298,7 +1299,7 @@ body .SobreMim .SobreMim-Content .descricao {
 }
 
 body.dark .SobreMim .SobreMim-Content .descricao {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(182, 181, 181, 0.2);
 }
 
 .SobreMim .SobreMim-Content * {
@@ -1325,7 +1326,7 @@ body.dark .SobreMim .SobreMim-Content .descricao {
 
 .SobreMim .SobreMim-Content .descricao p {
     padding-top: 20px;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     text-align: center;
 }
 
@@ -1343,6 +1344,52 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
+}
+
+.SobreMim .SobreMim-Content .descricao .h3-glass {
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: fit-content;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.SobreMim .SobreMim-Content .descricao .p-glass {
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: fit-content;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+body .SobreMim .SobreMim-Content .descricao .h3-glass,
+body .SobreMim .SobreMim-Content .descricao .p-glass {
+    background: rgba(194, 193, 193, 0.5);
+}
+
+body.dark .SobreMim .SobreMim-Content .descricao .h3-glass,
+body.dark .SobreMim .SobreMim-Content .descricao .p-glass {
+    background: rgba(51, 50, 50, 0.5);
 }
 
 @keyframes moveBlob1 {
