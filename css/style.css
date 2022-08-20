@@ -1384,12 +1384,12 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 
 body .SobreMim .SobreMim-Content .descricao .h3-glass,
 body .SobreMim .SobreMim-Content .descricao .p-glass {
-    background: rgba(194, 193, 193, 0.5);
+    background: rgba(172, 167, 167, 0.6);
 }
 
 body.dark .SobreMim .SobreMim-Content .descricao .h3-glass,
 body.dark .SobreMim .SobreMim-Content .descricao .p-glass {
-    background: rgba(51, 50, 50, 0.5);
+    background: rgba(51, 50, 50, 0.8);
 }
 
 @keyframes moveBlob1 {
