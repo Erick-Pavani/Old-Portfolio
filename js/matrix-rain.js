@@ -97,7 +97,13 @@ function animate(timeStamp) {
     const deltaTime = timeStamp - lastTime;
     lastTime = timeStamp;
     if (timer > nextFrame) {
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+        const body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+            console.log(body);
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+        } else {
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+        }
         ctx.textAlign = 'center';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = gradient; //'#0aff0a'
