@@ -23,9 +23,16 @@ function SendMail() {
     }
 }
 
+function nameInput(element) {
+    if (! element.checkValidity() && element.value) {
+        alert("Seu nome não pode conter números!");
+        element.value = "";
+    }
+}
+
 function mailInput(element) {
     if (! element.checkValidity() && element.value) {
         alert("Insira um email válido!");
-        document.getElementById("mailEmail").value = "";
+        element.value = "";
     }
 }

@@ -354,7 +354,7 @@
             <div class="contatoLayout">
                 <div class="contatoInputs">
                     <div class="inputBox Nome">
-                        <input type="text" id="mailName" maxlength="35" required>
+                        <input type="text" pattern="[a-z]*" id="mailName" maxlength="35" onfocusout="nameInput(this)" required>
                         <span>Nome</span>
                         <i></i>
                     </div>
