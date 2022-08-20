@@ -125,6 +125,10 @@ main {
     width: 100%;
 }
 
+.rainbowBorder.mobile {
+    width: 110% !important;
+}
+
 @media (min-width: 501px) {
     .rounded_desktop {
         display: flex;
@@ -504,7 +508,7 @@ header nav .mobile {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .home-links {
         gap: 25px;
     }
