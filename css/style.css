@@ -36,6 +36,7 @@ header {
     right: 0;
     z-index: 50;
     background: var(--primary-color);
+    height: 72px !important;
 }
 
 main .section {
@@ -47,6 +48,7 @@ main .section {
     z-index: 0;
     min-width: 100vw;
     overflow-x: hidden;
+    margin-top: 72px;
 }
 
 main .SobreMim.section,
@@ -226,7 +228,7 @@ main {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-svg {
+header svg {
     position: absolute;
     top: 0;
     width: 0;
@@ -234,7 +236,7 @@ svg {
     width: 100%;
 }
 
-path {
+header path {
     fill: none;
     stroke-width: 8px;
     stroke-linecap: round;
@@ -333,8 +335,7 @@ header nav .mobile {
 /*------------------------------ Home-Page --------------------------------- */
 
 .HomePage {
-    background: var(--primary-color);
-    margin-top: 9vh;
+    background: black;
 }
 
 .HomePage canvas {
@@ -532,7 +533,6 @@ header nav .mobile {
 /* ------------------------------------ Tecnologias ---------------------- */
 
 .Tecnologias {
-    margin-top: 9vh;
     padding-top: 35px;
     background: var(--primary-color);
 }
@@ -833,7 +833,6 @@ body.dark .Tecnologias .progress-item {
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    margin-top: 9vh;
     background: var(--primary-color);
     padding-top: 25px;
     overflow-y: hidden !important;
@@ -1245,11 +1244,65 @@ body.dark .Contato .textareaBox span {
 
 .SobreMim {
     background: var(--primary-color);
-    display: flex !important;
+    display: block !important;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+}
+
+.SobreMim .blob-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.SobreMim .blob-background .blob svg.blob-1 {
+    animation: moveBlob1 35s linear infinite;
+    -webkit-animation: moveBlob1 35s linear infinite;
+}
+
+.SobreMim .blob-background .blob svg.blob-2 {
+    animation: moveBlob2 35s linear infinite;
+    -webkit-animation: moveBlob2 35s linear infinite;
+}
+
+.SobreMim .SobreMim-Content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.SobreMim .SobreMim-Content .descricao {
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 85%;
+    height: fit-content;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 9vh;
-    padding-top: 15px;
+    padding: 25px;
+}
+
+body .SobreMim .SobreMim-Content .descricao {
+    background: rgba(76, 78, 80, 0.2);
+}
+
+body.dark .SobreMim .SobreMim-Content .descricao {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.SobreMim .SobreMim-Content * {
+    z-index: 1;
 }
 
 .SobreMim h1 {
@@ -1257,7 +1310,129 @@ body.dark .Contato .textareaBox span {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 65px;
+    font-size: 50px;
+    padding-top: 15px;
+}
+
+.SobreMim .SobreMim-Content .descricao h3 {
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    text-align: center;
+}
+
+.SobreMim .SobreMim-Content .descricao p {
+    padding-top: 20px;
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+body .SobreMim .SobreMim-Content .descricao p {
+    color: #212020;
+}
+
+body.dark .SobreMim .SobreMim-Content .descricao p {
+    color: #cecccc;
+}
+
+.SobreMim .SobreMim-Content .descricao p span {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+@keyframes moveBlob1 {
+    0%, 100% {
+        transform: translate(-5vw, 30vh);
+        -webkit-transform: translate(-5vw, 30vh);
+        -moz-transform: translate(-5vw, 30vh);
+        -ms-transform: translate(-5vw, 30vh);
+        -o-transform: translate(-5vw, 30vh);
+}
+
+    25% {
+        transform: translate(38vw, -40vh);
+        -webkit-transform: translate(38vw, -40vh);
+        -moz-transform: translate(38vw, -40vh);
+        -ms-transform: translate(38vw, -40vh);
+        -o-transform: translate(38vw, -40vh);
+}
+
+    50% {
+        transform: translate(76vw, 30vh);
+        -webkit-transform: translate(76vw, 30vh);
+        -moz-transform: translate(76vw, 30vh);
+        -ms-transform: translate(76vw, 30vh);
+        -o-transform: translate(76vw, 30vh);
+}
+
+    75% {
+        transform: translate(38vw, -40vh);
+        -webkit-transform: translate(38vw, -40vh);
+        -moz-transform: translate(38vw, -40vh);
+        -ms-transform: translate(38vw, -40vh);
+        -o-transform: translate(38vw, -40vh);
+}
+}
+
+@keyframes moveBlob2 {
+    0%, 100% {
+        transform: translate(76vw, -40vh);
+        -webkit-transform: translate(76vw, -40vh);
+        -moz-transform: translate(76vw, -40vh);
+        -ms-transform: translate(76vw, -40vh);
+        -o-transform: translate(76vw, -40vh);
+    }
+
+    25% {
+        transform: translate(42vw, 28vh);
+        -webkit-transform: translate(42vw, 28vh);
+        -moz-transform: translate(42vw, 28vh);
+        -ms-transform: translate(42vw, 28vh);
+        -o-transform: translate(42vw, 28vh);
+}
+
+    50% {
+        transform: translate(-10vw, -40vh);
+        -webkit-transform: translate(-10vw, -40vh);
+        -moz-transform: translate(-10vw, -40vh);
+        -ms-transform: translate(-10vw, -40vh);
+        -o-transform: translate(-10vw, -40vh);
+}
+
+    75% {
+        transform: translate(42vw, 28vh);
+        -webkit-transform: translate(42vw, 28vh);
+        -moz-transform: translate(42vw, 28vh);
+        -ms-transform: translate(42vw, 28vh);
+        -o-transform: translate(42vw, 28vh);
+}
+}
+
+@media (max-width: 800px) {
+    .blob-1 {
+        height: 75vh;
+    }
+    
+    .blob-2 {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .SobreMim h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 300px) {
+    .SobreMim h1 {
+        font-size: 33px;
+    }
 }
 
 /* ----------------------------------------- Projetos --------------------------------- */
@@ -1267,7 +1442,7 @@ body.dark .Contato .textareaBox span {
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    margin-top: 9vh;
+    margin-top: 72px;
     padding-top: 15px;
 }
 
@@ -1276,7 +1451,7 @@ body.dark .Contato .textareaBox span {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 65px;
+    font-size: 50px;
 }
 
 /* ------------------------------------------ Testing ------------------------------- */
@@ -1287,7 +1462,7 @@ body.dark .Contato .textareaBox span {
 
 ::-webkit-scrollbar {
     background: var(--primary-color);
-    width: 5px !important;
+    width: 10px !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1296,4 +1471,10 @@ body.dark .Contato .textareaBox span {
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+}
+
+@media (max-width: 500px) {
+    ::-webkit-scrollbar {
+        width: 5px !important;
+    }
 }

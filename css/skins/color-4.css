@@ -175,6 +175,30 @@
     background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
 }
 
+.SobreMim .SobreMim-Content .descricao h3 {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+}
+
+.SobreMim .blob-background .blob1-color1 {
+    stop-color: var(--gradient-1);
+}
+
+.SobreMim .blob-background .blob1-color2 {
+    stop-color: var(--gradient-2);
+}
+
+.SobreMim .blob-background .blob2-color1{
+    stop-color: var(--gradient-2);
+}
+
+.SobreMim .blob-background .blob2-color2 {
+    stop-color: var(--gradient-1);
+}
+
+.SobreMim .SobreMim-Content .descricao p span {
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+}
+
 /* ----------------------------- Projetos --------------------------- */
 
 .Projetos h1 {
