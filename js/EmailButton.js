@@ -24,7 +24,7 @@ function SendMail() {
 }
 
 function mailInput(element) {
-    if (! element.checkValidity()) {
+    if (! element.checkValidity() && element.value) {
         alert("Insira um email válido!");
         document.getElementById("mailEmail").value = "";
     }
