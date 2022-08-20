@@ -81,6 +81,10 @@ main .section.active {
     }
 }
 
+header .nav {
+    height: 100%;
+}
+
 .nav ul {
     display: flex;
     flex-direction: row;
@@ -332,6 +336,7 @@ header nav .mobile {
     opacity: 1;
     height: auto;
     padding: 15px;
+    padding-bottom: 0;
     gap: 10px;
 }
 
