@@ -99,7 +99,6 @@ function animate(timeStamp) {
     if (timer > nextFrame) {
         const body = document.querySelector("body");
         if (body.classList.contains("dark")) {
-            console.log(body);
             ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
         } else {
             ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
