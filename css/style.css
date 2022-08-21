@@ -39,6 +39,10 @@ header {
     height: 72px !important;
 }
 
+main {
+    position: relative;
+}
+
 main .section {
     position: fixed;
     top: 0;
@@ -340,30 +344,34 @@ header nav .mobile {
     gap: 10px;
 }
 
-
 /*------------------------------ Home-Page --------------------------------- */
 
-.HomePage {
-    background: black;
+.HomePage.section{
+    background: var(--primary-color);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
 }
 
 .HomePage canvas {
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     filter: blur(1.5px);
     -webkit-filter: blur(1.5px);
 }
 
-.home_content {
+.HomePage .home_content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 20vh; 
-    min-height: 100%;
 }
 
-.home_content h1 {
+.HomePage .home_content h1 {
     font-size: 5rem;
     color: transparent;
     background-clip: text;
@@ -378,7 +386,7 @@ header nav .mobile {
     -o-transition: 0.5s ease-in-out;
 }
 
-.home_content h3 {
+.HomePage .home_content h3 {
     font-size: 3rem;
     color: transparent;
     background-clip: text;
@@ -393,11 +401,11 @@ header nav .mobile {
     -o-transition: 0.5s ease-in-out;
 }
 
-.home_content * {
+.HomePage .home_content * {
     z-index: 1;
 }
 
-.gradientButton {
+.HomePage .gradientButton {
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -405,7 +413,7 @@ header nav .mobile {
     -o-border-radius: 15px;
     height: 58px;
     min-width: 240px;
-    width: 40%;
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -515,33 +523,33 @@ body.dark .btn {
 }
 
 @media (max-width: 500px) {
-    .home_content {
-        margin-top: 10rem;
+    .HomePage .gradientButton {
+        width: 60vw;
     }
 }
 
 @media (max-width: 450px) {
-    .home-links {
+    .HomePage .home-links {
         gap: 25px;
     }
 
-    .home_content h1 {
+    .HomePage .home_content h1 {
         font-size: 3rem;
     }
 
-    .home_content h3 {
+    .HomePage .home_content h3 {
         font-size: 1.5rem;
     }
 
-    .gradientButton {
+    .HomePage .gradientButton {
         height: 50px;
     }
 
-    .btn span {
+    .HomePage .btn span {
         font-size: 20px;
     }
 
-    .home-links i {
+    .HomePage .home-links i {
         font-size: 40px;
     }
 }
@@ -1237,9 +1245,12 @@ body.dark .Contato .textareaBox span {
 
 .SobreMim .blob-background {
     position: absolute;
+    /* height: 100%;
+    width: 100%; */
     bottom: 0;
-    height: 100%;
-    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     overflow: hidden;
 }
 
@@ -1517,7 +1528,7 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 /* -------------------------------- Scroll Bar ------------------------------------ */
 
 ::-webkit-scrollbar {
-    background: var(--primary-color);
+    background: transparent;
     width: 10px !important;
 }
 
