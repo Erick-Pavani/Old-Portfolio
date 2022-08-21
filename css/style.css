@@ -369,6 +369,7 @@ header nav .mobile {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 10vh;
 }
 
 .HomePage .home_content h1 {
