@@ -186,23 +186,19 @@ body.dark .gradientButton:hover .btn {
     background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 }
 
-.SobreMim .blob-background .blob1-color1,
-.SobreMim .blob-background-mobile .blob1-color1 {
+.SobreMim .blob-background .blob1-color1 {
     stop-color: #ee0979;
 }
 
-.SobreMim .blob-background .blob1-color2,
-.SobreMim .blob-background-mobile .blob1-color2 {
+.SobreMim .blob-background .blob1-color2 {
     stop-color: #ff6a00;
 }
 
-.SobreMim .blob-background .blob2-color1,
-.SobreMim .blob-background-mobile .blob2-color1 {
+.SobreMim .blob-background .blob2-color1 {
     stop-color: #00f260;
 }
 
-.SobreMim .blob-background .blob2-color2,
-.SobreMim .blob-background-mobile .blob2-color2  {
+.SobreMim .blob-background .blob2-color2  {
     stop-color: #0575e6;
 }
 

@@ -1242,10 +1242,6 @@ body.dark .Contato .textareaBox span {
     overflow: hidden;
 }
 
-.SobreMim .blob-background-mobile {
-    display: none;
-}
-
 .SobreMim .blob-background .blob svg.blob-1 {
     animation: moveBlob1 35s linear infinite;
     -webkit-animation: moveBlob1 35s linear infinite;
@@ -1254,16 +1250,6 @@ body.dark .Contato .textareaBox span {
 .SobreMim .blob-background .blob svg.blob-2 {
     animation: moveBlob2 35s linear infinite;
     -webkit-animation: moveBlob2 35s linear infinite;
-}
-
-.SobreMim .blob-background-mobile .blob svg.blob-3 {
-    animation: moveBlob3 35s linear infinite;
-    -webkit-animation: moveBlob3 35s linear infinite;
-}
-
-.SobreMim .blob-background-mobile .blob svg.blob-4 {
-    animation: moveBlob4 35s linear infinite;
-    -webkit-animation: moveBlob4 35s linear infinite;
 }
 
 .SobreMim .SobreMim-Content {
@@ -1419,9 +1405,7 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 
 @media (max-width: 800px) {
     .blob-1,
-    .blob-2,
-    .blob-3,
-    .blob-4 {
+    .blob-2{
         height: 75vh;
     }
 
@@ -1494,106 +1478,13 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     }
 }
 
-@media (max-width: 600px) and (min-height: 650px) {
-    .SobreMim .blob-background-mobile {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        bottom: -55%;
-        left: 0;
-        display: inline-block;
-    }
-
-    @keyframes moveBlob3 {
-        0%, 100% {
-            transform: translate(30vw, -10vh);
-            -webkit-transform: translate(30vw, -10vh);
-            -moz-transform: translate(30vw, -10vh);
-            -ms-transform: translate(30vw, -10vh);
-            -o-transform: translate(30vw, -10vh);
-}
-    
-        25% {
-            transform: translate(30vw, 40vh);
-            -webkit-transform: translate(30vw, 40vh);
-            -moz-transform: translate(30vw, 40vh);
-            -ms-transform: translate(30vw, 40vh);
-            -o-transform: translate(30vw, 40vh);
-}
-    
-        50% {
-            transform: translate(-20vw, -10vh);
-            -webkit-transform: translate(-20vw, -10vh);
-            -moz-transform: translate(-20vw, -10vh);
-            -ms-transform: translate(-20vw, -10vh);
-            -o-transform: translate(-20vw, -10vh);
-}
-    
-        75% {
-            transform: translate(-20vw, 50vh);
-            -webkit-transform: translate(-20vw, 50vh);
-            -moz-transform: translate(-20vw, 50vh);
-            -ms-transform: translate(-20vw, 50vh);
-            -o-transform: translate(-20vw, 50vh);
-        }
-    }
-
-    @keyframes moveBlob4 {
-        0%, 100% {
-            transform: translate(-20vw, -10vh);
-            -webkit-transform: translate(-20vw, -10vh);
-            -moz-transform: translate(-20vw, -10vh);
-            -ms-transform: translate(-20vw, -10vh);
-            -o-transform: translate(-20vw, -10vh);
-}
-    
-        25% {
-            transform: translate(-20vw, 50vh);
-            -webkit-transform: translate(-20vw, 50vh);
-            -moz-transform: translate(-20vw, 50vh);
-            -ms-transform: translate(-20vw, 50vh);
-            -o-transform: translate(-20vw, 50vh);
-}
-    
-        50% {
-            transform: translate(30vw, 50vh);
-            -webkit-transform: translate(30vw, 50vh);
-            -moz-transform: translate(30vw, 50vh);
-            -ms-transform: translate(30vw, 50vh);
-            -o-transform: translate(30vw, 50vh);
-}
-    
-        75% {
-            transform: translate(30vw, -10vh);
-            -webkit-transform: translate(30vw, -10vh);
-            -moz-transform: translate(30vw, -10vh);
-            -ms-transform: translate(30vw, -10vh);
-            -o-transform: translate(30vw, -10vh);
-}
-    }
-}
-
 @media (max-width: 450px) {
-    .SobreMim .blob-background-mobile {
-        bottom: -80%;
-    }
-    
     .SobreMim h1 {
         font-size: 38px;
     }
 }
 
-@media (max-width: 380px) {
-    .SobreMim .blob-background-mobile {
-        bottom: -120%;
-    }
-}
-
 @media (max-width: 300px) {
-    .SobreMim .blob-background-mobile {
-        bottom: -210%;
-    }
-    
     .SobreMim h1 {
         font-size: 33px;
     }
