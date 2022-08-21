@@ -1246,8 +1246,6 @@ body.dark .Contato .textareaBox span {
 
 .SobreMim .blob-background {
     position: absolute;
-    height: 100%;
-    width: 100%;
     bottom: 0;
     top: 0;
     left: 0;
@@ -1256,11 +1254,15 @@ body.dark .Contato .textareaBox span {
 }
 
 .SobreMim .blob-background .blob svg.blob-1 {
+    height: 100% !important;
+    width: auto !important;
     animation: moveBlob1 35s linear infinite;
     -webkit-animation: moveBlob1 35s linear infinite;
 }
 
 .SobreMim .blob-background .blob svg.blob-2 {
+    height: 100% !important;
+    width: auto !important;
     animation: moveBlob2 35s linear infinite;
     -webkit-animation: moveBlob2 35s linear infinite;
 }
@@ -1417,11 +1419,6 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 }
 
 @media (max-width: 800px) {
-    .blob-1,
-    .blob-2{
-        height: 75vh;
-    }
-
     @keyframes moveBlob1 {
         0%, 100% {
             transform: translate(-20vw, 0);
