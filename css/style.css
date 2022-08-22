@@ -1517,11 +1517,11 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
         }
     
         25% {
-            transform: translate(30vw, 250vh);
-            -webkit-transform: translate(30vw, 250vh);
-            -moz-transform: translate(30vw, 250vh);
-            -ms-transform: translate(30vw, 250vh);
-            -o-transform: translate(30vw, 250vh);
+            transform: translate(30vw, 180vh);
+            -webkit-transform: translate(30vw, 180vh);
+            -moz-transform: translate(30vw, 180vh);
+            -ms-transform: translate(30vw, 180vh);
+            -o-transform: translate(30vw, 180vh);
 }
     
         50% {
@@ -1533,11 +1533,11 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 }
     
         75% {
-            transform: translate(-20vw, 250vh);
-            -webkit-transform: translate(-20vw, 250vh);
-            -moz-transform: translate(-20vw, 250vh);
-            -ms-transform: translate(-20vw, 250vh);
-            -o-transform: translate(-20vw, 250vh);
+            transform: translate(-20vw, 180vh);
+            -webkit-transform: translate(-20vw, 180vh);
+            -moz-transform: translate(-20vw, 180vh);
+            -ms-transform: translate(-20vw, 180vh);
+            -o-transform: translate(-20vw, 180vh);
 }
     }
     
@@ -1559,19 +1559,19 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
         }
     
         50% {
-            transform: translate(-20vw, 250vh);
-            -webkit-transform: translate(-20vw, 250vh);
-            -moz-transform: translate(-20vw, 250vh);
-            -ms-transform: translate(-20vw, 250vh);
-            -o-transform: translate(-20vw, 250vh);
+            transform: translate(-20vw, 180vh);
+            -webkit-transform: translate(-20vw, 180vh);
+            -moz-transform: translate(-20vw, 180vh);
+            -ms-transform: translate(-20vw, 180vh);
+            -o-transform: translate(-20vw, 180vh);
 }
     
         75% {
-            transform: translate(50vw, 250vh);
-            -webkit-transform: translate(50vw, 250vh);
-            -moz-transform: translate(50vw, 250vh);
-            -ms-transform: translate(50vw, 250vh);
-            -o-transform: translate(50vw, 250vh);
+            transform: translate(50vw, 180vh);
+            -webkit-transform: translate(50vw, 180vh);
+            -moz-transform: translate(50vw, 180vh);
+            -ms-transform: translate(50vw, 180vh);
+            -o-transform: translate(50vw, 180vh);
 }
     }
     
