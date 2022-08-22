@@ -25,7 +25,7 @@ function SendMail() {
 
 function nameInput(element) {
     if (! element.checkValidity() && element.value) {
-        alert("Seu nome não pode conter números!");
+        alert("Seu nome pode conter apenas letras!");
         element.value = "";
     }
 }
