@@ -39,10 +39,6 @@ header {
     height: 72px !important;
 }
 
-main {
-    position: relative;
-}
-
 main .section {
     position: fixed;
     top: 0;
@@ -1240,14 +1236,23 @@ body.dark .Contato .textareaBox span {
 .SobreMim {
     background: var(--primary-color);
     display: block !important;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
+}
+
+.SobreMim .background {
+    position: relative;
+    min-height: 100%;
+    max-height: fit-content;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .SobreMim .blob-background {
-    min-height: 100% !important;
-    min-width: 100% !important;
     position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
 }
 
 .SobreMim .blob-background .blob svg.blob-1 {
@@ -1416,7 +1421,7 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 }
 
 @media (max-width: 1250px) and (max-height: 1000px){
-    .SobreMim {
+    .SobreMim .background {
         overflow-y: auto !important;
     }
 }
@@ -1492,6 +1497,16 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 }
 
 @media (max-width: 450px) {
+    .SobreMim .blob-background .blob svg.blob-1 {
+        animation: moveBlob1 50s linear infinite;
+        -webkit-animation: moveBlob1 50s linear infinite;
+    }
+
+    .SobreMim .blob-background .blob svg.blob-2 {
+        animation: moveBlob2 50s linear infinite;
+        -webkit-animation: moveBlob2 50s linear infinite;
+}
+
     @keyframes moveBlob1 {
         0%, 100% {
             transform: translate(-20vw, 0);
