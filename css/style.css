@@ -689,10 +689,6 @@ body.dark .btn {
     .tab {
         justify-content: center;
     }
-
-    main .Tecnologias.section {
-        overflow-y: hidden;
-    }    
 }
 
 @media (min-width: 651px) {
@@ -844,9 +840,6 @@ body.dark .Tecnologias .progress-item {
     justify-content: center;
     align-items: center;
 }
-
-/* ----------------------------------------- Testing --------------------------------- */
-
 
 /* ----------------------------------------- Contato --------------------------------- */
 
@@ -1613,7 +1606,7 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 
 ::-webkit-scrollbar {
     background: var(--primary-color);
-    width: 10px !important;
+    width: 5px !important;
 }
 
 ::-webkit-scrollbar-thumb {
