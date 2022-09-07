@@ -23,8 +23,8 @@ function alternateGradient() {
                     color1 = "#00F260";
                     color2 = "#0575E6";
                 } else {
-                    color1 = "#ff00cc";
-                    color2 = "#333399";
+                    color1 = "#00eaff";
+                    color2 = "#fd08b4";
                 }
                 gradient.addColorStop(0.2, color1);
                 gradient.addColorStop(0.8, color2);

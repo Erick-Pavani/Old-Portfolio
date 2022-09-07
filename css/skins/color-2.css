@@ -118,7 +118,7 @@
 }
 
 body .gradientButton:hover .btn {
-    background: linear-gradient(90deg, rgba(75, 5, 240, 0.2), rgba(203, 36, 70, 0.2)), linear-gradient(0deg, rgb(197, 193, 193), rgb(197, 193, 193));
+    background: linear-gradient(90deg, rgba(75, 5, 240, 0.2), rgba(203, 36, 70, 0.2)), linear-gradient(0deg, rgb(220, 215, 215), rgb(220, 215, 215));
 }
 
 body.dark .gradientButton:hover .btn {

@@ -1605,8 +1605,11 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 /* -------------------------------- Scroll Bar ------------------------------------ */
 
 ::-webkit-scrollbar {
-    background: var(--primary-color);
     width: 5px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1615,10 +1618,4 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
-}
-
-@media (max-width: 500px) {
-    ::-webkit-scrollbar {
-        width: 5px !important;
-    }
 }
