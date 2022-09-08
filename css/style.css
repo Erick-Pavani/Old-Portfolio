@@ -1307,7 +1307,7 @@ body.dark .SobreMim .SobreMim-Content .descricao {
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     height: fit-content;
     -webkit-border-radius: 16px;
@@ -1437,13 +1437,15 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 }
 
 .SobreMim .certificadosPage .certificadosList {
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     margin-top: 30px;
     margin-bottom: 20px;
     position: relative;
     min-width: 75%;
     min-height: 60%;
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -1457,8 +1459,6 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    backdrop-filter: blur(25px) !important;
-    -webkit-backdrop-filter: blur(25px) !important;
 } 
 
 .SobreMim .certificadosPage .certificadosList .listItem {
@@ -1814,13 +1814,6 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 @media (max-width: 300px) {
     .SobreMim h1 {
         font-size: 33px;
-    }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3) {
-    .ios.SobreMim .certificadosPage .certificadosList {
-        backdrop-filter: 25px;
-        -webkit-backdrop-filter: blur(25px);
     }
 }
 
