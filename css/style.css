@@ -1409,12 +1409,8 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    align-self: start;
-    transform: translate(-50px, 50px);
-    -webkit-transform: translate(-50px, 50px);
-    -moz-transform: translate(-50px, 50px);
-    -ms-transform: translate(-50px, 50px);
-    -o-transform: translate(-50px, 50px);
+    left: -50px;
+    top: 8vh;
     z-index: 0;
 }
 
@@ -1429,12 +1425,8 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    align-self: end;
-    transform: translate(50px, 250px);
-    -webkit-transform: translate(50px, 250px);
-    -moz-transform: translate(50px, 250px);
-    -ms-transform: translate(50px, 250px);
-    -o-transform: translate(50px, 250px);
+    right: -50px;
+    bottom: -10vh;
     z-index: 0;
 }
 
@@ -1660,6 +1652,11 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
         width: 250px;
         height: 250px;
     }
+
+    .SobreMim .certificadosPage .certificadosList .listItem .rank,
+    .SobreMim .certificadosPage .certificadosList .listItem .rank small {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
@@ -1729,6 +1726,18 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
             -ms-transform: translate(50vw, 35vh);
             -o-transform: translate(50vw, 35vh);
         }
+    }
+
+    .SobreMim .certificadosPage .certificadosList {
+        width: 80%;
+    }
+
+    .SobreMim .certificadosPage .certificadosList .listItem:hover {
+        transform: scale(1.10) translateX(30px) translateY(-15px);
+        -webkit-transform: scale(1.10) translateX(30px) translateY(-15px);
+        -moz-transform: scale(1.10) translateX(30px) translateY(-15px);
+        -ms-transform: scale(1.10) translateX(30px) translateY(-15px);
+        -o-transform: scale(1.10) translateX(30px) translateY(-15px);
     }
 }
 
@@ -1823,6 +1832,10 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 @media (max-width: 300px) {
     .SobreMim h1 {
         font-size: 33px;
+    }
+
+    .SobreMim .certificadosPage .certificadosList {
+        width: 95%;
     }
 }
 
