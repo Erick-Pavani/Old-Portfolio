@@ -33,7 +33,7 @@
     filter: blur(20px);
 }
 
-.box {
+.Tecnologias .box {
     position: relative;
     width: 185px;
     height: 185px;
@@ -52,7 +52,7 @@
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
 }
 
-.box::before {
+.Tecnologias .box::before {
     content: '';
     position: absolute;
     width: 500px;
@@ -68,7 +68,7 @@
     -o-border-radius: 15px;
 }
 
-.box::after {
+.Tecnologias .box::after {
     content: '';
     position: absolute;
     width: 500px;
@@ -84,11 +84,11 @@
     -o-border-radius: 15px;
 }
 
-.box i {
+.Tecnologias .box i {
     background: linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
 }
 
-.box h4 {
+.Tecnologias .box h4 {
     background: -webkit-linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
 }
 
@@ -199,7 +199,7 @@ body.dark .gradientButton:hover .btn {
     stop-color: var(--gradient-1);
 }
 
-.SobreMim .SobreMim-Content .descricao p span {
+.SobreMim .SobreMim-Content .descricao p span, .SobreMim .SobreMim-Content .certificados p {
     background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
 }
 

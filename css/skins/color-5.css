@@ -33,7 +33,7 @@ body.dark {
     filter: blur(20px);
 }
 
-.box {
+.Tecnologias .box {
     width: 185px;
     height: 185px;
     border-radius: 15px;
@@ -52,7 +52,7 @@ body.dark {
     will-change: transform;
 }
 
-.box::before {
+.Tecnologias .box::before {
     content: '';
     height: 150%;
     width: 150%;
@@ -64,7 +64,7 @@ body.dark {
     -webkit-animation: spin 1.5s linear infinite;
 }
 
-.box::after {
+.Tecnologias .box::after {
     content: '';
     position: absolute;
     background: var(--primary-color);
@@ -83,11 +83,11 @@ body.dark {
     justify-content: center;
 }
 
-.box i {
+.Tecnologias .box i {
     background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 }
 
-.box h4 {
+.Tecnologias .box h4 {
     background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 
 }
@@ -202,9 +202,18 @@ body.dark .gradientButton:hover .btn {
     stop-color: #0575e6;
 }
 
-.SobreMim .SobreMim-Content .descricao p span {
+.SobreMim .SobreMim-Content .descricao p span, .SobreMim .SobreMim-Content .certificados p {
     background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 }
+
+.SobreMim .certificadosPage::before {
+    background: linear-gradient(#ffc107, #e91e63) !important;
+}
+
+.SobreMim .certificadosPage::after {
+    background: linear-gradient(#2196f3, #31ff38) !important;
+}
+
 
 /* ----------------------------- Projetos --------------------------- */
 

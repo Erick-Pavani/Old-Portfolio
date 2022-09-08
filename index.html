@@ -45,7 +45,7 @@
         <nav class="nav">
             <ul>
                 <li>
-                    <a href="#HomePage" class="HomePage active">
+                    <a href="#HomePage" class="HomePage active" onclick="resetCertificados()">
                         <div class="rounded_desktop">
                             <div class="rounded">
                                 <img src="./img/Foto de Perfil.jpg" alt="Foto de Perfil">
@@ -55,35 +55,35 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#SobreMim">
+                    <a href="#SobreMim" onclick="resetCertificados()">
                         Sobre Mim
                     </a>
                 </li>
                 <li>
-                    <a href="#Tecnologias">
+                    <a href="#Tecnologias" onclick="resetCertificados()">
                         Tecnologias
                     </a>
                 </li>
                 <li>
-                    <a href="#Projetos">
+                    <a href="#Projetos" onclick="resetCertificados()">
                         Projetos
                     </a>
                 </li>
                 <li>
-                    <a href="#Contato">
+                    <a href="#Contato" onclick="resetCertificados()">
                         Contato
                     </a>
                 </li>
             </ul>
             <div class="name_picture">
-                <a href="#HomePage" data-section-index="0" class="logo">
+                <a href="#HomePage" data-section-index="0" class="logo" onclick="resetCertificados()">
                     <div class="rounded_mobile">
                         <img src="./img/Foto de Perfil.jpg" alt="Foto de perfil">
                     </div>
                 </a>
             </div>
             <div class="name">
-                <a href="#HomePage" class="active">
+                <a href="#HomePage" class="active" onclick="resetCertificados()">
                     <span class="nome">Erick - Full Stack Dev</span>
                 </a>
             </div>
@@ -99,25 +99,25 @@
         <div class="mobileMenu">
             <ul>
                 <li>
-                    <a href="#SobreMim">
+                    <a href="#SobreMim" onclick="resetCertificados()">
                         Sobre Mim
                     </a>
                 </li>
                 <div class="rainbowBorder"></div>
                 <li>
-                    <a href="#Tecnologias">
+                    <a href="#Tecnologias" onclick="resetCertificados()">
                         Tecnologias
                     </a>
                 </li>
                 <div class="rainbowBorder"></div>
                 <li>
-                    <a href="#Projetos">
+                    <a href="#Projetos" onclick="resetCertificados()">
                         Projetos
                     </a>
                 </li>
                 <div class="rainbowBorder"></div>
                 <li>
-                    <a href="#Contato">
+                    <a href="#Contato" onclick="resetCertificados()">
                         Contato
                     </a>
                 </li>
@@ -217,8 +217,182 @@
                             Me chamo <span>Erick</span>, prazer em te conhecer. Atualmente tenho <span>23</span> anos e sou formado em <span>Análise e desenvolvimento de sistemas</span> pela <span>FATEC</span>. Sou um <span>desenvolvedor web full stack</span> com uma paixão imensa por <span>tecnologias web</span>, <span>Python</span> e <span>automações</span>. Sou extremamente motivado à resolução de problemas e desafios, não apenas sou movido por eles mas os busco constantemente. Meu <span>objetivo profissional</span> é construir uma carreira de sucesso na área de desenvolvimento e construir <span>aplicações</span> que resolvam problemas das pessoas através dessa maravilha que é a tecnologia. Procuro sempre desenvolver <span>soluções</span> que sejam simples e agradáveis ao usuário final. Fique à vontade para explorar este site e todas as suas funcionalidades e claro, me <span>mandar um email</span> através da <span>aba de contatos</span>, ficarei mais do que feliz em conversar com você!
                         </p>
                     </div>
-                    <!-- <div class="texto_intro">
-                    
+                    <div class="certificados" onclick="showCertificados()">
+                        <p>Certificados</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificadosPage hidden">
+                <h1>Certificados</h1>
+                <div class="certificadosList">
+                    <!----------- List Item 1 ---------->
+                    <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/Fatec.jpg" alt="Logo FATEC">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#1</small>
+                            </h2>
+                            <h4>Graduação - Análise e Desenvolvimento de Sistemas</h4>
+                            <p>Fatec Jundiaí</p>
+                        </div>
+                    </div>
+                    <!----------- List Item 2 ---------->
+                    <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/Hashtag.jpg" alt="Logo Hashtag Treinamentos">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#2</small>
+                            </h2>
+                            <h4>Python Impressionador</h4>
+                            <p>Hashtag Treinamentos</p>
+                        </div>
+                    </div>
+                    <!----------- List Item 3 ---------->
+                    <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#3</small>
+                            </h2>
+                            <h4>Design orientado a objetos</h4>
+                            <p>Linkedin Learning</p>
+                        </div>
+                    </div>
+                    <!----------- List Item 4 ---------->
+                    <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#4</small>
+                            </h2>
+                            <h4>HTML Essential Training</h4>
+                            <p>Linkedin Learning</p>
+                        </div>
+                    </div>
+                    <!-- --------- List Item 5 --------->
+                    <!-- <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#5</small>
+                            </h2>
+                            <h4>CSS Essential Training</h4>
+                            <p>Linkedin Learning</p>
+                        </div>
+                    </div> -->
+                    <!----------- List Item 6 ---------->
+                    <!-- <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#6</small>
+                            </h2>
+                            <h4>JavaScript Essential Training</h4>
+                            <p>Linkedin Learning</p>
+                        </div>
+                    </div> -->
+                    <!----------- List Item 7 ---------->
+                    <!-- <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#7</small>
+                            </h2>
+                            <h4>Técnicas Avançadas de Python</h4>
+                            <p>Linkedin Learning</p>
+                        </div>
+                    </div> -->
+                    <!----------- List Item 8 ---------->
+                    <!-- <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#8</small>
+                            </h2>
+                            <h4>Bootstrap 5 Essential Training</h4>
+                            <p>Linkedin Learning</p>
+                        </div>
+                    </div> -->
+                    <!----------- List Item 9 ---------->
+                    <!-- <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#9</small>
+                            </h2>
+                            <h4>Version Control with Git</h4>
+                            <p>Linkedin Learning</p>
+                        </div>
+                    </div> -->
+                    <!----------- List Item 10 ---------->
+                    <!-- <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/LinkedinLearning.png" alt="Logo Linkedin Learning">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#10</small>
+                            </h2>
+                            <h4>Tailwind CSS 3 Essential Training</h4>
+                            <p>Linkedin Learning</p>
+                        </div>
+                    </div> -->
+                    <!----------- List Item 11 ---------->
+                    <!-- <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/OneBitCode.png" alt="logo OneBitCode">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#11</small>
+                            </h2>
+                            <h4>HTML5</h4>
+                            <p>OneBitCode</p>
+                        </div>
+                    </div> -->
+                    <!----------- List Item 12 ---------->
+                    <!-- <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/OneBitCode.png" alt="logo OneBitCode">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#12</small>
+                            </h2>
+                            <h4>CSS3</h4>
+                            <p>OneBitCode</p>
+                        </div>
+                    </div> -->
+                    <!----------- List Item 13 ---------->
+                    <!-- <div class="listItem">
+                        <div class="imgBox">
+                            <img src="./img/Certificados-Logos/UIPath.png" alt="Logo UIPath">
+                        </div>
+                        <div class="content">
+                            <h2 class="rank">
+                                <small>#13</small>
+                            </h2>
+                            <h4>UIPath Developer Foundation</h4>
+                            <p>UIPath Official Docs</p>
+                        </div>
                     </div> -->
                 </div>
             </div>
@@ -403,6 +577,7 @@
     <script src="./js/matrix-rain.js"></script>
     <script src="./js/tecnologias-slider.js"></script>
     <script src="./js/EmailButton.js"></script>
+    <script src="./js/certificados.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 </body>
 </html>
