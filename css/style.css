@@ -1499,8 +1499,10 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 
 .SobreMim .certificadosPage .certificadosList .imgBox {
     position: relative;
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
