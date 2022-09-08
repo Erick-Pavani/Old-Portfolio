@@ -1415,6 +1415,7 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -moz-transform: translate(-50px, 50px);
     -ms-transform: translate(-50px, 50px);
     -o-transform: translate(-50px, 50px);
+    z-index: 0;
 }
 
 .SobreMim .certificadosPage::after {
@@ -1434,6 +1435,11 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -moz-transform: translate(50px, 250px);
     -ms-transform: translate(50px, 250px);
     -o-transform: translate(50px, 250px);
+    z-index: 0;
+}
+
+.SobreMim .certificadosPage h1 {
+    z-index: 1;
 }
 
 .SobreMim .certificadosPage .certificadosList {
@@ -1444,7 +1450,7 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     margin-bottom: 20px;
     min-width: 75%;
     min-height: 60%;
-    /* background: rgba(255, 255, 255, 0.1); */
+    background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
