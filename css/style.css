@@ -558,7 +558,7 @@ body.dark .btn {
     background: var(--primary-color);
 }
 
-.top {
+.Tecnologias .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -566,7 +566,7 @@ body.dark .btn {
     padding: 0 25px;
 }
 
-.top .tecnologias_prev_next {
+.Tecnologias .top .tecnologias_prev_next {
     outline: none;
     border: none;
     font-size: 70px;
@@ -577,7 +577,7 @@ body.dark .btn {
     -webkit-text-fill-color: transparent;
 }
 
-.title {
+.Tecnologias .title {
     margin-bottom: 10px;
     display: flex;
     font-size: 65px;
@@ -587,7 +587,7 @@ body.dark .btn {
     color: transparent;
 }
 
-.cards {
+.Tecnologias .cards {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -746,55 +746,55 @@ body.dark .btn {
 }
 
 @media (max-width: 500px) {
-    .top {
+    .Tecnologias .top {
         margin-top: 20px;
     }
 
-    .title {
+    .Tecnologias .title {
         font-size: 42px;
     }
 
-    .cards {
+    .Tecnologias .cards {
         margin-top: 15px;
         width: 100%;
     }
 
-    .box {
+    .Tecnologias .box {
         width: 125px;
         height: 125px;
     }
 
-    .box i {
+    .Tecnologias .box i {
         font-size: 50px;
     }
 
-    .box h4 {
+    .Tecnologias .box h4 {
         font-size: 17.5px;
     }
 
-    .box .too_long {
+    .Tecnologias .box .too_long {
         font-size: 15px !important;
     }
 }
 
 @media (max-width: 450px) {
-    .top .tecnologias_prev_next {
+    .Tecnologias .top .tecnologias_prev_next {
         font-size: 30px;
     }
 }
 
 @media (max-width: 400px) {
-    .cards {
+    .Tecnologias .cards {
         gap: 10px;
     }
 }
 
 @media (max-width: 350px) {
-    .title {
+    .Tecnologias .title {
         font-size: 28px;
     }
 
-    .cards {
+    .Tecnologias .cards {
         padding: 5px;
     }
 }
