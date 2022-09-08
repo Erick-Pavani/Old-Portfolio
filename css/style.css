@@ -1439,13 +1439,12 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 .SobreMim .certificadosPage .certificadosList {
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(20px);
     margin-top: 30px;
     margin-bottom: 20px;
-    position: relative;
     min-width: 75%;
     min-height: 60%;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
