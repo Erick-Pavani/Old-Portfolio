@@ -1458,6 +1458,10 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     justify-content: center;
 } 
 
+.SobreMim .certificadosPage .certificadosList a {
+    text-decoration: none;
+}
+
 .SobreMim .certificadosPage .certificadosList .listItem {
     display: flex;
     position: relative;
