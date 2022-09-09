@@ -5,7 +5,9 @@ const certificados = document.querySelector(".certificadosPage");
 function showCertificados() {
     sobreMim.classList.toggle("hidden");
     certificados.classList.toggle("hidden");
-    window.scrollTo(0, 10000);
+    setTimeout(function () {
+        window.scrollTo(0, 10000);
+    }, 500)
 }
 
 function resetCertificados() {
