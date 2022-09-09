@@ -7,7 +7,7 @@ function showCertificados() {
     certificados.classList.toggle("hidden");
     setTimeout(function () {
         window.scrollTo(0, 10000);
-    }, 500)
+    }, 1000)
 }
 
 function resetCertificados() {
