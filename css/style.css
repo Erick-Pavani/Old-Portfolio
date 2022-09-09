@@ -1306,8 +1306,8 @@ body.dark .SobreMim .SobreMim-Content .descricao {
 .SobreMim .SobreMim-Content .certificados {
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     height: fit-content;
     -webkit-border-radius: 16px;
@@ -1326,16 +1326,16 @@ body.dark .SobreMim .SobreMim-Content .descricao {
     -o-transition: 0.5s ease-in-out;
 }
 
-.SobreMim .SobreMim-Content .certificados:hover {
-    scale: 1.3;
-}
-
 body .SobreMim .SobreMim-Content .certificados {
     background: rgba(76, 78, 80, 0.2);
 }
 
 body.dark .SobreMim .SobreMim-Content .certificados {
     background: rgba(182, 181, 181, 0.2);
+}
+
+.SobreMim .SobreMim-Content .certificados:hover {
+    scale: 1.3;
 }
 
 .SobreMim .SobreMim-Content .certificados p {
@@ -1461,8 +1461,8 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
 
 .SobreMim .certificadosPage .certificadosList {
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(25px) !important;
     -webkit-backdrop-filter: blur(25px) !important;
+    backdrop-filter: blur(25px);
     margin-top: 30px;
     margin-bottom: 20px;
     min-width: 75%;
