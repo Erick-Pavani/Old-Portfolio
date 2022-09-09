@@ -1988,10 +1988,12 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -o-transition: 0.5s;
     animation: projectsCards 4s linear infinite;
     -webkit-animation: projectsCards 4s linear infinite;
+    will-change: transform;
 }
 
 .Projetos .projetos_container .projects_box:hover::before {
     inset: -20px 0;
+    will-change: transform;
 }
 
 .Projetos .projetos_container .projects_box::after {
@@ -2005,6 +2007,7 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     z-index: 1;
+    will-change: transform;
 }
 
 .Projetos .projetos_container .projects_box .projects_content {
@@ -2087,7 +2090,6 @@ body.dark .Projetos .projetos_container .projects_box .projects_content {
     -moz-transition: 0.5s ease-in-out;
     -ms-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
-    pointer-events: none;
 }
 
 .Projetos .projetos_container .projects_box .projects_content a:hover {
