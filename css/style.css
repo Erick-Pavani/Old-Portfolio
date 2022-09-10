@@ -1990,16 +1990,10 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -o-transition: 0.5s;
     animation: projectsCards 4s linear infinite;
     -webkit-animation: projectsCards 4s linear infinite;
-    will-change: transform;
-    /* mask-image: none; */
-    -webkit-mask-image: radial-gradient(white, black) !important;
 }
 
 .Projetos .projetos_container .projects_box:hover::before {
     inset: -20px 0;
-    will-change: transform;
-    /* mask-image: none; */
-    -webkit-mask-image: radial-gradient(white, black) !important;
 }
 
 .Projetos .projetos_container .projects_box::after {
