@@ -1989,11 +1989,15 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     animation: projectsCards 4s linear infinite;
     -webkit-animation: projectsCards 4s linear infinite;
     will-change: transform;
+    mask-image: none;
+    -webkit-mask-image: radial-gradient(white, black);
 }
 
 .Projetos .projetos_container .projects_box:hover::before {
     inset: -20px 0;
     will-change: transform;
+    mask-image: none;
+    -webkit-mask-image: radial-gradient(white, black);
 }
 
 .Projetos .projetos_container .projects_box::after {
@@ -2007,7 +2011,6 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     z-index: 1;
-    will-change: transform;
 }
 
 .Projetos .projetos_container .projects_box .projects_content {
