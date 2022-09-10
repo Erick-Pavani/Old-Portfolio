@@ -1975,7 +1975,6 @@ body.dark .SobreMim .SobreMim-Content .descricao p {
     -o-border-radius: 50%;
     overflow: hidden;
     will-change: transform;
-    /* mask-image: none; */
     -webkit-mask-image: radial-gradient(white, black) !important;
 }
 
