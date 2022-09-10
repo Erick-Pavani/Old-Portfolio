@@ -2092,10 +2092,6 @@ body.dark .Projetos .projetos_container .projects_box .projects_content {
     pointer-events: none;
 }
 
-.Projetos .projetos_container .projects_box:enabled .projects_content a {
-    pointer-events: auto !important;
-}
-
 .Projetos .projetos_container .projects_box .projects_content a:hover {
     letter-spacing: 0.2em;
 }
