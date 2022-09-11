@@ -2089,7 +2089,6 @@ body.dark .Projetos .projetos_container .projects_box .projects_content {
     -moz-transition: 0.5s ease-in-out;
     -ms-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
-    pointer-events: none;
 }
 
 .Projetos .projetos_container .projects_box .projects_content a:hover {
@@ -2123,6 +2122,10 @@ body.dark .Projetos .projetos_container .projects_box .projects_content {
 @media (max-width: 500px) {
     .Projetos h1 {
         font-size: 42px;
+    }
+
+    .Projetos .projetos_container .projects_box .projects_content a {
+        pointer-events: none;
     }
 }
 
