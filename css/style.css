@@ -96,13 +96,7 @@ header .nav {
     flex-wrap: wrap;
 }
 
-.nav ul li {
-    background: -webkit-linear-gradient(45deg, var(--gradient-top-1) 5%, var(--gradient-top-2) 70%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    cursor: pointer;
+header .nav ul li {
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
@@ -110,9 +104,24 @@ header .nav {
     -o-transition: 0.5s ease-in-out;
 }
 
-/* .nav ul li a.active {
-    background: #03a9f4;
-} */
+header .nav ul li a,
+header .nav ul li a div {
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, var(--gradient-1) 5%, var(--gradient-2) 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+header .nav ul li a.active,
+header .nav ul li a.active div {
+    color: var(--secondary-color);
+    background: none;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: var(--secondary-color);
+}
 
 .nav ul li:hover {
     scale: 1.25;

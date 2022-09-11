@@ -148,6 +148,26 @@ body.dark .gradientButton:hover .btn {
     background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%);
 }
 
+/* ----------------------------- Desktop Header --------------------------- */
+
+header .nav ul li a,
+header .nav ul li a div {
+    color: var(--secondary-color) !important;
+    background: none !important;
+    background-clip: border-box !important;
+    -webkit-background-clip: border-box !important;
+    -webkit-text-fill-color: var(--secondary-color) !important;
+}
+
+header .nav ul li a.active,
+header .nav ul li a.active div {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 40%,#fff020 45%,#3edf4b 60%,#3363ff 75%,#b102b7 85%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+}
+
 /* ----------------------------- Contato --------------------------- */
 
 .Contato h1 {
@@ -226,7 +246,7 @@ body.dark .gradientButton:hover .btn {
 }
 
 .Projetos .projetos_container .projects_box::before {
-    background: linear-gradient(315deg,  #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%) !important;
+    background: linear-gradient(315deg,  #fd004c 0%,#fe9000 25%,#fff020 36%,#3edf4b 54%,#3363ff 72%,#b102b7 88%) !important;
 }
 
 .Projetos .projetos_container .projects_box .projects_content a {
