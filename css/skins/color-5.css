@@ -168,6 +168,24 @@ header .nav ul li a.active div {
     color: transparent !important;
 }
 
+/* ----------------------------- Mobile Header --------------------------- */
+
+header .mobileMenu ul li a {
+    background: none !important;
+    background-clip: border-box !important;
+    color: var(--secondary-color) !important;
+    -webkit-background-clip: border-box !important;
+    -webkit-text-fill-color: var(--secondary-color) !important;
+}
+
+header .mobileMenu ul li a.active {
+    background: linear-gradient(90deg, #fd004c 0%,#fe9000 40%,#fff020 45%,#3edf4b 60%,#3363ff 75%,#b102b7 85%) !important;
+    background-clip: text !important;
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
 /* ----------------------------- Contato --------------------------- */
 
 .Contato h1 {

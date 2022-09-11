@@ -316,18 +316,30 @@ header nav .mobile {
     z-index: 50;
 }
 
-.mobileMenu ul li {
+header .mobileMenu ul li {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
-    font-size: 25px;
     padding: 10px 0;
-    background: linear-gradient(45deg, var(--gradient-top-1) 20%, var(--gradient-top-2) 75%);
+}
+
+header .mobileMenu ul li a {
+    background: linear-gradient(45deg, var(--gradient-1) 20%, var(--gradient-2) 75%);
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+header .mobileMenu ul li a.active {
+    background: none;
+    background-clip: border-box;
+    color: var(--secondary-color);
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: var(--secondary-color);
 }
 
 .mobileMenu .rainbowBorder {
