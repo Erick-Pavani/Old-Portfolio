@@ -225,6 +225,14 @@ body.dark .gradientButton:hover .btn {
     background: linear-gradient(90deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%) !important;
 }
 
+.Projetos .projetos_container .projects_box::before {
+    background: linear-gradient(315deg,  #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%) !important;
+}
+
+.Projetos .projetos_container .projects_box .projects_content a {
+    background: linear-gradient(45deg, #fd004c 0%,#fe9000 30%,#fff020 35%,#3edf4b 40%,#3363ff 55%,#b102b7 75%) !important;
+}
+
 /* -------------------------------- Scroll Bar ------------------------ */
 
 ::-webkit-scrollbar-thumb {
