@@ -1,3 +1,7 @@
+window.onload = function() { 
+    document.getElementById("loading").style.display = "none";
+}
+
 const mobile = document.getElementById('menu');
 
 function setMenu(e) {
@@ -28,3 +32,7 @@ var typed = new Typed(".typing", {
     backSpeed: 50,
     loop: true
 })
+
+window.addEventListener("resize", function () {
+    this.location.reload();
+}) 
